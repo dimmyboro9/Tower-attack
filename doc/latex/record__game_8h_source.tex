@@ -1,0 +1,31 @@
+\hypertarget{record__game_8h_source}{}\doxysection{record\+\_\+game.\+h}
+\mbox{\hyperlink{record__game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef RECORD\_GAME\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define RECORD\_GAME\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{game_8h}{game.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_record_game}{CRecordGame}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_game}{CGame}} }
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \textcolor{keyword}{public}:}
+\DoxyCodeLine{12                             \mbox{\hyperlink{class_c_record_game_ab33585c33b74f8b0dae3a1cab9c704e6}{CRecordGame}}         ( \textcolor{keyword}{const} \mbox{\hyperlink{class_c_moves}{CMoves}}\& record );}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{24         \textcolor{keywordtype}{bool}                \mbox{\hyperlink{class_c_record_game_a4d0571b7d3b7884fdefc69f4dd6224ea}{choose\_map}}          ( ) \textcolor{keyword}{override};}
+\DoxyCodeLine{25         }
+\DoxyCodeLine{36         \textcolor{keywordtype}{bool}                \mbox{\hyperlink{class_c_record_game_a7c49fe724cf95e0babea831e231da89f}{buy\_units}}           ( ) \textcolor{keyword}{override};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{48         \textcolor{keywordtype}{bool}                \mbox{\hyperlink{class_c_record_game_a38e6b2ab5d09b18ee19f469190b8ecac}{play}}                ( ) \textcolor{keyword}{override};}
+\DoxyCodeLine{49     \textcolor{keyword}{private}:}
+\DoxyCodeLine{50         \textcolor{keywordtype}{string}              attackers\_name      ( \textcolor{keywordtype}{char} sign ) \textcolor{keyword}{const};}
+\DoxyCodeLine{51         \textcolor{keywordtype}{bool}                play\_menu           ( \textcolor{keywordtype}{char} option, \textcolor{keywordtype}{bool}\& is\_over );}
+\DoxyCodeLine{52         \textcolor{keywordtype}{bool}                simulation          ( );}
+\DoxyCodeLine{53         \textcolor{keywordtype}{void}                add\_model           ( \textcolor{keywordtype}{size\_t} action );}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void}                add\_att\_to\_map      ( \textcolor{keyword}{const} shared\_ptr < CAttacker >\& attacker, \textcolor{keywordtype}{size\_t} entry );}
+\DoxyCodeLine{55         \textcolor{keywordtype}{void}                add\_tower           ( \textcolor{keyword}{const} shared\_ptr < CTower >\& tower, \textcolor{keywordtype}{size\_t} x, \textcolor{keywordtype}{size\_t} y );}
+\DoxyCodeLine{56         \textcolor{keywordtype}{bool}                make\_move           ( );}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

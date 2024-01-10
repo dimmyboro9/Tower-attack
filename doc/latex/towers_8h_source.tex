@@ -1,0 +1,23 @@
+\hypertarget{towers_8h_source}{}\doxysection{towers.\+h}
+\mbox{\hyperlink{towers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef TOWERS\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define TOWERS\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{non__fixed__model_8h}{non\_fixed\_model.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{towers_8h_ac825bf9d08f9189098bc8567ad0025fd}{NUM\_OF\_TOWERS}} = 4;}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_tower}{CTower}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_non___fixed___model}{CNon\_Fixed\_Model}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     \textcolor{keyword}{public}:}
+\DoxyCodeLine{14                         \mbox{\hyperlink{class_c_tower_a92d161457423835ee99cb15f512cfbd8}{CTower}}          ( \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& \mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}}, \textcolor{keywordtype}{char} \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}}, \textcolor{keywordtype}{size\_t} hp, \textcolor{keywordtype}{size\_t} damage, \textcolor{keywordtype}{size\_t} range );}
+\DoxyCodeLine{15         \textcolor{keyword}{virtual}         \mbox{\hyperlink{class_c_tower_a7a37f2705c802820ff41030b40bbc858}{\string~CTower}}         ( ) noexcept = default;}
+\DoxyCodeLine{21         virtual \mbox{\hyperlink{class_c_model}{CModel}}* \mbox{\hyperlink{class_c_tower_a1da1a904455d0ab4e2380ce951068ee7}{clone}}           ( ) const override = 0;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{28         \textcolor{keywordtype}{void}            \mbox{\hyperlink{class_c_tower_a7568f8a3bd97789f5f1f2d0c15f67f93}{print\_info}}      ( ostream\& os ) const override;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \};        }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

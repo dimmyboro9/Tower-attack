@@ -1,0 +1,114 @@
+\hypertarget{class_c_burakov}{}\doxysection{CBurakov Class Reference}
+\label{class_c_burakov}\index{CBurakov@{CBurakov}}
+
+
+Class that represents one type of tower.  
+
+
+
+
+{\ttfamily \#include $<$burakov.\+h$>$}
+
+
+
+Inheritance diagram for CBurakov\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_c_burakov__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CBurakov\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_c_burakov__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_burakov_ac8e4b802967a15a374a3014a5f98fee0}{CBurakov}} (size\+\_\+t attack\+\_\+num=0)
+\item 
+\mbox{\hyperlink{class_c_model}{CModel}} $\ast$ \mbox{\hyperlink{class_c_burakov_abfb07f5cac25bdfb9767c69c0a926832}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em That method makes a copy of model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_burakov_a9ee6d91b89ffbb4682ffca2aa0664aa6}{attack}} (\mbox{\hyperlink{class_c_map}{CMap}} \&mappy, const \mbox{\hyperlink{class_c_model}{CModel}} \&victim) override
+\begin{DoxyCompactList}\small\item\em That method implements attack in a special way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents one type of tower. 
+
+It has\+: m\+\_\+\+Attack\+\_\+\+Number -\/ number of attacks perfomed by tower 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_burakov_ac8e4b802967a15a374a3014a5f98fee0}\label{class_c_burakov_ac8e4b802967a15a374a3014a5f98fee0}} 
+\index{CBurakov@{CBurakov}!CBurakov@{CBurakov}}
+\index{CBurakov@{CBurakov}!CBurakov@{CBurakov}}
+\doxysubsubsection{\texorpdfstring{CBurakov()}{CBurakov()}}
+{\footnotesize\ttfamily CBurakov\+::\+CBurakov (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{attack\+\_\+num = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_burakov_a9ee6d91b89ffbb4682ffca2aa0664aa6}\label{class_c_burakov_a9ee6d91b89ffbb4682ffca2aa0664aa6}} 
+\index{CBurakov@{CBurakov}!attack@{attack}}
+\index{attack@{attack}!CBurakov@{CBurakov}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily bool CBurakov\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{CMap}} \&}]{mappy,  }\item[{const \mbox{\hyperlink{class_c_model}{CModel}} \&}]{victim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method implements attack in a special way. 
+
+With some frequence it can kill attacker by one hit
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mappy} & map on which model is located to find all his neighbours \\
+\hline
+\mbox{\texttt{ in}}  & {\em victim} & type of victim, that it attacks\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if model has more than 0 HP \\
+\hline
+{\em return} & FALSE if model has 0 HP \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_model_a96771c25866b5b4a09f0f568c20a70d5}{CModel}}.
+
+\mbox{\Hypertarget{class_c_burakov_abfb07f5cac25bdfb9767c69c0a926832}\label{class_c_burakov_abfb07f5cac25bdfb9767c69c0a926832}} 
+\index{CBurakov@{CBurakov}!clone@{clone}}
+\index{clone@{clone}!CBurakov@{CBurakov}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ CBurakov\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method makes a copy of model. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on class \mbox{\hyperlink{class_c_model}{CModel}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_tower_a1da1a904455d0ab4e2380ce951068ee7}{CTower}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{burakov_8h}{burakov.\+h}}\item 
+\mbox{\hyperlink{burakov_8cpp}{burakov.\+cpp}}\end{DoxyCompactItemize}

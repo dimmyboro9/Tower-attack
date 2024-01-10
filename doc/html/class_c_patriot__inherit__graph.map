@@ -1,0 +1,6 @@
+<map id="CPatriot" name="CPatriot">
+<area shape="rect" id="node1" title="Class that represents one type of tower." alt="" coords="41,229,115,256"/>
+<area shape="rect" id="node2" href="$class_c_tower.html" title="Class that represents all towers on the map." alt="" coords="43,155,113,181"/>
+<area shape="rect" id="node3" href="$class_c_non___fixed___model.html" title="Class that represents all non&#45;fixed models on the map." alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node4" href="$class_c_model.html" title="Abstract class that represents all models on the map." alt="" coords="43,5,113,32"/>
+</map>

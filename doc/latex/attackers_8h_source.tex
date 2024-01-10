@@ -1,0 +1,33 @@
+\hypertarget{attackers_8h_source}{}\doxysection{attackers.\+h}
+\mbox{\hyperlink{attackers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ATTACKERS\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ATTACKERS\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{map_8h}{map.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{non__fixed__model_8h}{non\_fixed\_model.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_attacker}{CAttacker}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_non___fixed___model}{CNon\_Fixed\_Model}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     \textcolor{keyword}{public}:}
+\DoxyCodeLine{19                                 \mbox{\hyperlink{class_c_attacker_a68d65964b49a89e87075fecadb0385c1}{CAttacker}}       ( \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& \mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}}, \textcolor{keywordtype}{char} \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}}, \textcolor{keywordtype}{size\_t} hp, \textcolor{keywordtype}{size\_t} damage, \textcolor{keywordtype}{size\_t} speed, \textcolor{keywordtype}{size\_t} range, \textcolor{keywordtype}{size\_t} price );}
+\DoxyCodeLine{20         \textcolor{keyword}{virtual}                 \mbox{\hyperlink{class_c_attacker_acfcca2694a897fb34b22946cb24926e8}{\string~CAttacker}}      ( ) noexcept = default;}
+\DoxyCodeLine{26         virtual \mbox{\hyperlink{class_c_model}{CModel}}*         \mbox{\hyperlink{class_c_attacker_a00cc3eab5085f3cc6cacd851ebfb3fd8}{clone}}           ( ) const override = 0;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{33         virtual \textcolor{keywordtype}{void}            \mbox{\hyperlink{class_c_attacker_afbdd52e8de5ca8f0bec666fcbc54b629}{create\_route}}    ( list < \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} > route );}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{45         virtual \textcolor{keywordtype}{bool}            \mbox{\hyperlink{class_c_attacker_ac3946c5644c0deeb5ddcce8b9bb4417d}{make\_move}}       ( \mbox{\hyperlink{class_c_map}{CMap}}\& mappy );}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{52         \textcolor{keywordtype}{size\_t}                  \mbox{\hyperlink{class_c_attacker_a9d8dde647078ca58afa6f93cd4163106}{show\_price}}      ( ) const;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59         \textcolor{keywordtype}{void}                    \mbox{\hyperlink{class_c_attacker_a454927b4d536edf3452680e4ad67a2fc}{print\_info}}      ( ostream\& os ) const override;}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     protected:}
+\DoxyCodeLine{62         const \textcolor{keywordtype}{size\_t}            \mbox{\hyperlink{class_c_attacker_ab3f028f7b33c06d51f79c1fbf40359a5}{m\_Speed}};}
+\DoxyCodeLine{63         \textcolor{keywordtype}{size\_t}                  \mbox{\hyperlink{class_c_attacker_af53d7ad2dd623d6e6665418c8aa39314}{m\_Price}};           }
+\DoxyCodeLine{64         list < \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} >   \mbox{\hyperlink{class_c_attacker_adaa2a0c7d2149265b6fd7a2ef3a3e288}{m\_Route}};}
+\DoxyCodeLine{65 \};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,51 @@
+\hypertarget{models_8h_source}{}\doxysection{models.\+h}
+\mbox{\hyperlink{models_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MODELS\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MODELS\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{coordinates_8h}{coordinates.h}}"{}} }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{constants_8h}{constants.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{map_8h}{map.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }\mbox{\hyperlink{namespacestring__constants}{string\_constants}};}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_map}{CMap}};}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_model}{CModel}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     \textcolor{keyword}{public}:}
+\DoxyCodeLine{23                         \mbox{\hyperlink{class_c_model_ac7038923094553bd359adf3888207ef5}{CModel}}          ( \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& \mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}}, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& \mbox{\hyperlink{class_c_model_a1385b01f10a0b3caf5e21c3a1af6769b}{type}}, \textcolor{keywordtype}{char} \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}} );}
+\DoxyCodeLine{24         \textcolor{keyword}{virtual}         \mbox{\hyperlink{class_c_model_a8a587bcc0f8b3b08079ab087da831e47}{\string~CModel}}         ( ) noexcept = default;}
+\DoxyCodeLine{30         virtual \mbox{\hyperlink{class_c_model}{CModel}}* \mbox{\hyperlink{class_c_model_a51dadfa9bc1ffe5b628bbeb5309150f0}{clone}}           ( ) const = 0;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{42         virtual \textcolor{keywordtype}{bool}    \mbox{\hyperlink{class_c_model_a26534753e68e505c722f8f3c3c54a126}{get\_hit}}         ( \textcolor{keywordtype}{size\_t} damage ) = 0;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{55         virtual \textcolor{keywordtype}{bool}    \mbox{\hyperlink{class_c_model_a96771c25866b5b4a09f0f568c20a70d5}{attack}}          ( \mbox{\hyperlink{class_c_map}{CMap}}\& mappy, const \mbox{\hyperlink{class_c_model}{CModel}}\& victim ) = 0;}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{62         virtual \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_c_model_a3112a99092a0b109a7d42d741f4b5777}{add\_location}}    ( const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}}\& coordinates ) = 0;}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{69         virtual \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_c_model_a6451c81a3e011d24c999b307a0ea51e9}{decrease\_damage}} ( \textcolor{keywordtype}{size\_t} divider ) = 0;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{79         virtual \textcolor{keywordtype}{bool}    \mbox{\hyperlink{class_c_model_a664cd2cd7217f8c7b15432498b2dfa77}{is\_dead}}         ( ) const = 0;}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{86         virtual \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_c_model_a3be9ff4a2a4f04ef09f84f9b35baefba}{print}}           ( ostream\& os ) const;}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{93         \textcolor{keywordtype}{string}          \mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}}            ( ) const;}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{100         \textcolor{keywordtype}{char}            \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}}            ( ) const;}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{107         \textcolor{keywordtype}{string}          \mbox{\hyperlink{class_c_model_a1385b01f10a0b3caf5e21c3a1af6769b}{type}}            ( ) const;}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{114         virtual \textcolor{keywordtype}{size\_t}  \mbox{\hyperlink{class_c_model_a5183f5eddd756021c7de4000ea38648e}{get\_num}}         ( ) const;}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116     protected:}
+\DoxyCodeLine{117         const \textcolor{keywordtype}{string}    \mbox{\hyperlink{class_c_model_ab09d7ba0900ae4b70db470d7f53485bb}{m\_Name}};}
+\DoxyCodeLine{118         const \textcolor{keywordtype}{string}    \mbox{\hyperlink{class_c_model_a791e5569b867f5edbee604d2668ecde0}{m\_Type}};}
+\DoxyCodeLine{119         const \textcolor{keywordtype}{char}      \mbox{\hyperlink{class_c_model_a292394e74912314d6f0d7aaa4387db55}{m\_Sign}};}
+\DoxyCodeLine{120 \};}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 ostream\& operator<<      ( ostream\& os, const \mbox{\hyperlink{class_c_model}{CModel}}\& src ); }
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

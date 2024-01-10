@@ -1,0 +1,119 @@
+\hypertarget{class_c_entrance}{}\doxysection{CEntrance Class Reference}
+\label{class_c_entrance}\index{CEntrance@{CEntrance}}
+
+
+Class that represents entrance on the map.  
+
+
+
+
+{\ttfamily \#include $<$entrance.\+h$>$}
+
+
+
+Inheritance diagram for CEntrance\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_c_entrance__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CEntrance\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_c_entrance__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_entrance_a45251fc8d118168e8c4ab7282cc02a04}{CEntrance}} (size\+\_\+t num=0)
+\item 
+\mbox{\hyperlink{class_c_model}{CModel}} $\ast$ \mbox{\hyperlink{class_c_entrance_a6b940af97a60cce6e6f692f1d93e8f2d}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em That method makes a copy of model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_entrance_a2ae0f37cd34eb65b680e404f4e63845e}{print}} (ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em That method prints model\textquotesingle{}s sign. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_c_entrance_a37c6e40770431b508b9cf15a5515704c}{get\+\_\+num}} () const override
+\begin{DoxyCompactList}\small\item\em That method returns entry number ( only if model is an entrance ) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents entrance on the map. 
+
+It has\+: m\+\_\+\+Number -\/ number of entry; 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_entrance_a45251fc8d118168e8c4ab7282cc02a04}\label{class_c_entrance_a45251fc8d118168e8c4ab7282cc02a04}} 
+\index{CEntrance@{CEntrance}!CEntrance@{CEntrance}}
+\index{CEntrance@{CEntrance}!CEntrance@{CEntrance}}
+\doxysubsubsection{\texorpdfstring{CEntrance()}{CEntrance()}}
+{\footnotesize\ttfamily CEntrance\+::\+CEntrance (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{num = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_entrance_a6b940af97a60cce6e6f692f1d93e8f2d}\label{class_c_entrance_a6b940af97a60cce6e6f692f1d93e8f2d}} 
+\index{CEntrance@{CEntrance}!clone@{clone}}
+\index{clone@{clone}!CEntrance@{CEntrance}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ CEntrance\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method makes a copy of model. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on class \mbox{\hyperlink{class_c_model}{CModel}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_fixed___model_a09d3a8bddef12a123cd274889c3d4c08}{CFixed\+\_\+\+Model}}.
+
+\mbox{\Hypertarget{class_c_entrance_a37c6e40770431b508b9cf15a5515704c}\label{class_c_entrance_a37c6e40770431b508b9cf15a5515704c}} 
+\index{CEntrance@{CEntrance}!get\_num@{get\_num}}
+\index{get\_num@{get\_num}!CEntrance@{CEntrance}}
+\doxysubsubsection{\texorpdfstring{get\_num()}{get\_num()}}
+{\footnotesize\ttfamily size\+\_\+t CEntrance\+::get\+\_\+num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method returns entry number ( only if model is an entrance ) 
+
+\begin{DoxyReturn}{Returns}
+The size\+\_\+t -\/ number of entrance 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_model_a5183f5eddd756021c7de4000ea38648e}{CModel}}.
+
+\mbox{\Hypertarget{class_c_entrance_a2ae0f37cd34eb65b680e404f4e63845e}\label{class_c_entrance_a2ae0f37cd34eb65b680e404f4e63845e}} 
+\index{CEntrance@{CEntrance}!print@{print}}
+\index{print@{print}!CEntrance@{CEntrance}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void CEntrance\+::print (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method prints model\textquotesingle{}s sign. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & Stream, where will be sign printed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_model_a3be9ff4a2a4f04ef09f84f9b35baefba}{CModel}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entrance_8h}{entrance.\+h}}\item 
+\mbox{\hyperlink{entrance_8cpp}{entrance.\+cpp}}\end{DoxyCompactItemize}

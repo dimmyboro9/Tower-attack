@@ -1,0 +1,110 @@
+\hypertarget{class_c_freak}{}\doxysection{CFreak Class Reference}
+\label{class_c_freak}\index{CFreak@{CFreak}}
+
+
+Class that represents one type of attacking player.  
+
+
+
+
+{\ttfamily \#include $<$freak.\+h$>$}
+
+
+
+Inheritance diagram for CFreak\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_c_freak__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CFreak\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_c_freak__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_freak_a73c8fa96b9a44debbabeff18c391d246}{CFreak}} ()
+\item 
+\mbox{\hyperlink{class_c_model}{CModel}} $\ast$ \mbox{\hyperlink{class_c_freak_a7a52614f4681ed4ca7995db15fe4aada}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em That method makes a copy of model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_freak_acf5dd28db4f50a5c615b53bb69bff10c}{get\+\_\+hit}} (size\+\_\+t damage) override
+\begin{DoxyCompactList}\small\item\em That method implements taking damage in a special way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents one type of attacking player. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_freak_a73c8fa96b9a44debbabeff18c391d246}\label{class_c_freak_a73c8fa96b9a44debbabeff18c391d246}} 
+\index{CFreak@{CFreak}!CFreak@{CFreak}}
+\index{CFreak@{CFreak}!CFreak@{CFreak}}
+\doxysubsubsection{\texorpdfstring{CFreak()}{CFreak()}}
+{\footnotesize\ttfamily CFreak\+::\+CFreak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_freak_a7a52614f4681ed4ca7995db15fe4aada}\label{class_c_freak_a7a52614f4681ed4ca7995db15fe4aada}} 
+\index{CFreak@{CFreak}!clone@{clone}}
+\index{clone@{clone}!CFreak@{CFreak}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ CFreak\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method makes a copy of model. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on class \mbox{\hyperlink{class_c_model}{CModel}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_attacker_a00cc3eab5085f3cc6cacd851ebfb3fd8}{CAttacker}}.
+
+\mbox{\Hypertarget{class_c_freak_acf5dd28db4f50a5c615b53bb69bff10c}\label{class_c_freak_acf5dd28db4f50a5c615b53bb69bff10c}} 
+\index{CFreak@{CFreak}!get\_hit@{get\_hit}}
+\index{get\_hit@{get\_hit}!CFreak@{CFreak}}
+\doxysubsubsection{\texorpdfstring{get\_hit()}{get\_hit()}}
+{\footnotesize\ttfamily bool CFreak\+::get\+\_\+hit (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method implements taking damage in a special way. 
+
+If this attacker get hit, he increases his damage by 5 points and heals himself by 10 points
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em damage} & The amount of damage the model receives\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if victim has more than 0 HP \\
+\hline
+{\em return} & FALSE if victim has 0 HP \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_model_a26534753e68e505c722f8f3c3c54a126}{CModel}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{freak_8h}{freak.\+h}}\item 
+\mbox{\hyperlink{freak_8cpp}{freak.\+cpp}}\end{DoxyCompactItemize}

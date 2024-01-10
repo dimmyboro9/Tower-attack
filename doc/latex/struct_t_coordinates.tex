@@ -1,0 +1,153 @@
+\hypertarget{struct_t_coordinates}{}\doxysection{TCoordinates Struct Reference}
+\label{struct_t_coordinates}\index{TCoordinates@{TCoordinates}}
+
+
+Struct that indicates the coordinates on the map.  
+
+
+
+
+{\ttfamily \#include $<$coordinates.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_t_coordinates_a65f98de9c866f7bff28c97b623e007bd}{TCoordinates}} ()=default
+\item 
+\mbox{\hyperlink{struct_t_coordinates_a0310350ab3508377936e79b5e6a5e58f}{TCoordinates}} (size\+\_\+t x, size\+\_\+t y)
+\item 
+bool \mbox{\hyperlink{struct_t_coordinates_acfaa35c1e1364a98074873529d5271b9}{operator$<$}} (const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&cmp) const
+\begin{DoxyCompactList}\small\item\em Overloaded operator \texorpdfstring{$<$}{<}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_t_coordinates_a97e2ceb4a5f841b13da6e6128658064b}{operator==}} (const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&cmp) const
+\begin{DoxyCompactList}\small\item\em Overloaded operator ==. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{struct_t_coordinates_a8b1f2d90ffbeffe7708a9029a2484fa7}{m\+\_\+X}}
+\item 
+size\+\_\+t \mbox{\hyperlink{struct_t_coordinates_a6c03adcadae26b48d518782a5d70ac45}{m\+\_\+Y}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{struct_t_coordinates_ab627592aacd4dad4416adf4898ac9f04}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&src)
+\begin{DoxyCompactList}\small\item\em Overloaded operator ==. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct that indicates the coordinates on the map. 
+
+It has\+: m\+\_\+X -\/ Abcscissa coordinate m\+\_\+Y -\/ Ordinate coordinate 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_t_coordinates_a65f98de9c866f7bff28c97b623e007bd}\label{struct_t_coordinates_a65f98de9c866f7bff28c97b623e007bd}} 
+\index{TCoordinates@{TCoordinates}!TCoordinates@{TCoordinates}}
+\index{TCoordinates@{TCoordinates}!TCoordinates@{TCoordinates}}
+\doxysubsubsection{\texorpdfstring{TCoordinates()}{TCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily TCoordinates\+::\+TCoordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{struct_t_coordinates_a0310350ab3508377936e79b5e6a5e58f}\label{struct_t_coordinates_a0310350ab3508377936e79b5e6a5e58f}} 
+\index{TCoordinates@{TCoordinates}!TCoordinates@{TCoordinates}}
+\index{TCoordinates@{TCoordinates}!TCoordinates@{TCoordinates}}
+\doxysubsubsection{\texorpdfstring{TCoordinates()}{TCoordinates()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily TCoordinates\+::\+TCoordinates (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x,  }\item[{size\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_t_coordinates_acfaa35c1e1364a98074873529d5271b9}\label{struct_t_coordinates_acfaa35c1e1364a98074873529d5271b9}} 
+\index{TCoordinates@{TCoordinates}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!TCoordinates@{TCoordinates}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool TCoordinates\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{cmp }\end{DoxyParamCaption}) const}
+
+
+
+Overloaded operator \texorpdfstring{$<$}{<}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cmp} & The structure to compare against\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this structure is smaller \\
+\hline
+{\em return} & FALSE if this structure is bigger \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{struct_t_coordinates_a97e2ceb4a5f841b13da6e6128658064b}\label{struct_t_coordinates_a97e2ceb4a5f841b13da6e6128658064b}} 
+\index{TCoordinates@{TCoordinates}!operator==@{operator==}}
+\index{operator==@{operator==}!TCoordinates@{TCoordinates}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool TCoordinates\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{cmp }\end{DoxyParamCaption}) const}
+
+
+
+Overloaded operator ==. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cmp} & The structure to compare against\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this structure and structure to compare against are equal \\
+\hline
+{\em return} & FALSE if this structure and structure to compare against are not equal \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{struct_t_coordinates_ab627592aacd4dad4416adf4898ac9f04}\label{struct_t_coordinates_ab627592aacd4dad4416adf4898ac9f04}} 
+\index{TCoordinates@{TCoordinates}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!TCoordinates@{TCoordinates}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloaded operator ==. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & output stream \\
+\hline
+\mbox{\texttt{ in}}  & {\em src} & structure that will be write out\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em output} & stream \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_t_coordinates_a8b1f2d90ffbeffe7708a9029a2484fa7}\label{struct_t_coordinates_a8b1f2d90ffbeffe7708a9029a2484fa7}} 
+\index{TCoordinates@{TCoordinates}!m\_X@{m\_X}}
+\index{m\_X@{m\_X}!TCoordinates@{TCoordinates}}
+\doxysubsubsection{\texorpdfstring{m\_X}{m\_X}}
+{\footnotesize\ttfamily size\+\_\+t TCoordinates\+::m\+\_\+X}
+
+\mbox{\Hypertarget{struct_t_coordinates_a6c03adcadae26b48d518782a5d70ac45}\label{struct_t_coordinates_a6c03adcadae26b48d518782a5d70ac45}} 
+\index{TCoordinates@{TCoordinates}!m\_Y@{m\_Y}}
+\index{m\_Y@{m\_Y}!TCoordinates@{TCoordinates}}
+\doxysubsubsection{\texorpdfstring{m\_Y}{m\_Y}}
+{\footnotesize\ttfamily size\+\_\+t TCoordinates\+::m\+\_\+Y}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{coordinates_8h}{coordinates.\+h}}\item 
+\mbox{\hyperlink{coordinates_8cpp}{coordinates.\+cpp}}\end{DoxyCompactItemize}

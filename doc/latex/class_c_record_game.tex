@@ -1,0 +1,140 @@
+\hypertarget{class_c_record_game}{}\doxysection{CRecord\+Game Class Reference}
+\label{class_c_record_game}\index{CRecordGame@{CRecordGame}}
+
+
+Class that represents game records.  
+
+
+
+
+{\ttfamily \#include $<$record\+\_\+game.\+h$>$}
+
+
+
+Inheritance diagram for CRecord\+Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_c_record_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CRecord\+Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_c_record_game__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_record_game_ab33585c33b74f8b0dae3a1cab9c704e6}{CRecord\+Game}} (const \mbox{\hyperlink{class_c_moves}{CMoves}} \&record)
+\item 
+bool \mbox{\hyperlink{class_c_record_game_a4d0571b7d3b7884fdefc69f4dd6224ea}{choose\+\_\+map}} () override
+\begin{DoxyCompactList}\small\item\em This method implements map choice. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_record_game_a7c49fe724cf95e0babea831e231da89f}{buy\+\_\+units}} () override
+\begin{DoxyCompactList}\small\item\em This method implements buying attackers. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_record_game_a38e6b2ab5d09b18ee19f469190b8ecac}{play}} () override
+\begin{DoxyCompactList}\small\item\em This method implements main engine of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents game records. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_record_game_ab33585c33b74f8b0dae3a1cab9c704e6}\label{class_c_record_game_ab33585c33b74f8b0dae3a1cab9c704e6}} 
+\index{CRecordGame@{CRecordGame}!CRecordGame@{CRecordGame}}
+\index{CRecordGame@{CRecordGame}!CRecordGame@{CRecordGame}}
+\doxysubsubsection{\texorpdfstring{CRecordGame()}{CRecordGame()}}
+{\footnotesize\ttfamily CRecord\+Game\+::\+CRecord\+Game (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_moves}{CMoves}} \&}]{record }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_record_game_a7c49fe724cf95e0babea831e231da89f}\label{class_c_record_game_a7c49fe724cf95e0babea831e231da89f}} 
+\index{CRecordGame@{CRecordGame}!buy\_units@{buy\_units}}
+\index{buy\_units@{buy\_units}!CRecordGame@{CRecordGame}}
+\doxysubsubsection{\texorpdfstring{buy\_units()}{buy\_units()}}
+{\footnotesize\ttfamily bool CRecord\+Game\+::buy\+\_\+units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method implements buying attackers. 
+
+There are some private methods that help this method ( entry treatment, different switches ... )
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this method is fully complited \\
+\hline
+{\em return} & FALSE if player decide to exit the game \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_game_a502774dd7cd8d55afb347edfbbd79957}{CGame}}.
+
+\mbox{\Hypertarget{class_c_record_game_a4d0571b7d3b7884fdefc69f4dd6224ea}\label{class_c_record_game_a4d0571b7d3b7884fdefc69f4dd6224ea}} 
+\index{CRecordGame@{CRecordGame}!choose\_map@{choose\_map}}
+\index{choose\_map@{choose\_map}!CRecordGame@{CRecordGame}}
+\doxysubsubsection{\texorpdfstring{choose\_map()}{choose\_map()}}
+{\footnotesize\ttfamily bool CRecord\+Game\+::choose\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method implements map choice. 
+
+There are some private methods that help this method ( entry treatment, different switches ... )
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this method is fully complited \\
+\hline
+{\em return} & FALSE if player decide to exit the game \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_game_a3df7dce120921d2864f30c3b5b5daacd}{CGame}}.
+
+\mbox{\Hypertarget{class_c_record_game_a38e6b2ab5d09b18ee19f469190b8ecac}\label{class_c_record_game_a38e6b2ab5d09b18ee19f469190b8ecac}} 
+\index{CRecordGame@{CRecordGame}!play@{play}}
+\index{play@{play}!CRecordGame@{CRecordGame}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily bool CRecord\+Game\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method implements main engine of the game. 
+
+It provides player moves, light AI, that puts towers, and simulation of the game process
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this method is fully complited \\
+\hline
+{\em return} & FALSE if player decide to exit the game \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_game_a98999a3202f5b723746aacdb6985dbfe}{CGame}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{record__game_8h}{record\+\_\+game.\+h}}\item 
+\mbox{\hyperlink{record__game_8cpp}{record\+\_\+game.\+cpp}}\end{DoxyCompactItemize}

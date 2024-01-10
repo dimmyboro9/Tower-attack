@@ -1,0 +1,40 @@
+\hypertarget{non__fixed__model_8h_source}{}\doxysection{non\+\_\+fixed\+\_\+model.\+h}
+\mbox{\hyperlink{non__fixed__model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef NON\_FIXED\_MODEL\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define NON\_FIXED\_MODEL\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{map_8h}{map.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{models_8h}{models.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_non___fixed___model}{CNon\_Fixed\_Model}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_model}{CModel}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     \textcolor{keyword}{public}:}
+\DoxyCodeLine{19                         \mbox{\hyperlink{class_c_non___fixed___model_aa46fdc677af3fe5974033fdf38b76850}{CNon\_Fixed\_Model}}    ( \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& \mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}}, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& \mbox{\hyperlink{class_c_model_a1385b01f10a0b3caf5e21c3a1af6769b}{type}}, \textcolor{keywordtype}{char} \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}}, \textcolor{keywordtype}{size\_t} hp, \textcolor{keywordtype}{size\_t} damage, \textcolor{keywordtype}{size\_t} range );}
+\DoxyCodeLine{20         \textcolor{keyword}{virtual}         \mbox{\hyperlink{class_c_non___fixed___model_a017269338f993a1da260f7bd04d7cc96}{\string~CNon\_Fixed\_Model}}   ( ) noexcept = default;}
+\DoxyCodeLine{26         virtual \mbox{\hyperlink{class_c_model}{CModel}}* \mbox{\hyperlink{class_c_non___fixed___model_ad2d274d6ca20e75f62f8fbec84d66995}{clone}}               ( ) const override = 0;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{38         \textcolor{keywordtype}{bool}            \mbox{\hyperlink{class_c_non___fixed___model_ad4e1a49e7f71877df3bc5bcaeaa5b739}{get\_hit}}             ( \textcolor{keywordtype}{size\_t} damage ) override;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{51         \textcolor{keywordtype}{bool}            \mbox{\hyperlink{class_c_non___fixed___model_a29c9f6fe13e340a2ac7aa98d34b38a9b}{attack}}              ( \mbox{\hyperlink{class_c_map}{CMap}}\& mappy, const \mbox{\hyperlink{class_c_model}{CModel}}\& victim ) override;}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{58         \textcolor{keywordtype}{void}            \mbox{\hyperlink{class_c_non___fixed___model_a48c92a206c46f0d9cdad5689baee70c5}{add\_location}}        ( const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}}\& coordinates ) override;}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{65         \textcolor{keywordtype}{void}            \mbox{\hyperlink{class_c_non___fixed___model_a06ff1b91caeb6cf990d30f999ed40f0a}{decrease\_damage}}     ( \textcolor{keywordtype}{size\_t} divider ) override;}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{75         \textcolor{keywordtype}{bool}            \mbox{\hyperlink{class_c_non___fixed___model_a6edefb58ef4b07f5ce9b60163e3e850b}{is\_dead}}             ( ) const override;}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{82         virtual \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_c_non___fixed___model_abf2a19d909d797dbad6d26a5413806f2}{print\_info}}          ( ostream\& os ) const = 0;}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     protected:  }
+\DoxyCodeLine{85         virtual \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_c_non___fixed___model_a63ba1ea4761ff7f2fcff1d136c43e97b}{print\_action}}        ( ostream\& os, const pair < \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}}, shared\_ptr < \mbox{\hyperlink{class_c_model}{CModel}} > >\& victim ) const;}
+\DoxyCodeLine{86          }
+\DoxyCodeLine{87         \textcolor{keywordtype}{size\_t}          \mbox{\hyperlink{class_c_non___fixed___model_af16879d61e99cd626e8f5a4dbdf14535}{m\_Hp}};}
+\DoxyCodeLine{88         \textcolor{keywordtype}{size\_t}          \mbox{\hyperlink{class_c_non___fixed___model_a0114bd6e42b53b65efd5a50f0e0bcc5a}{m\_Damage}};}
+\DoxyCodeLine{89         const \textcolor{keywordtype}{size\_t}    \mbox{\hyperlink{class_c_non___fixed___model_a15114e741007374ae5a8e7f77009bc6c}{m\_Range}};}
+\DoxyCodeLine{90         \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}}    \mbox{\hyperlink{class_c_non___fixed___model_ae8572e1e48d7fa986aa93b6164c09a6a}{m\_Location}};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 \};}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

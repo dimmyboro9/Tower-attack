@@ -1,0 +1,41 @@
+\hypertarget{moves_8h_source}{}\doxysection{moves.\+h}
+\mbox{\hyperlink{moves_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MOVES\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MOVES\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_moves}{CMoves}}}
+\DoxyCodeLine{20 \{}
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22                                         \mbox{\hyperlink{class_c_moves_a348c208c7ec83ee365cabf7d0147b418}{CMoves}}          ( ) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{23         }
+\DoxyCodeLine{29         \textcolor{keywordtype}{void}                            \mbox{\hyperlink{class_c_moves_af8079caa72ca218c4678589527799849}{add\_map\_number}}  ( \textcolor{keywordtype}{size\_t} map\_number );}
+\DoxyCodeLine{30         }
+\DoxyCodeLine{37         \textcolor{keywordtype}{void}                            \mbox{\hyperlink{class_c_moves_a3ea6eb3472338181394fff8793370696}{add\_attacker}}    ( \textcolor{keywordtype}{char} sign, \textcolor{keywordtype}{size\_t} num );}
+\DoxyCodeLine{38         }
+\DoxyCodeLine{47         \textcolor{keywordtype}{void}                            \mbox{\hyperlink{class_c_moves_a0404d9e9de35998ec38987df06258b8b}{add\_game\_move}}   ( \textcolor{keywordtype}{size\_t} game\_move );}
+\DoxyCodeLine{48         }
+\DoxyCodeLine{54         \textcolor{keywordtype}{size\_t}                          \mbox{\hyperlink{class_c_moves_a7dab61d8ca3bab7987425f92d45df311}{get\_map\_number}}  ( ) \textcolor{keyword}{const}; }
+\DoxyCodeLine{55         }
+\DoxyCodeLine{61         unordered\_map < char, size\_t >  \mbox{\hyperlink{class_c_moves_a9cd4bdd7be2f5a70eeacb8c96f4c4529}{get\_attackers}}   ( ) \textcolor{keyword}{const}; }
+\DoxyCodeLine{62         }
+\DoxyCodeLine{68         \textcolor{keywordtype}{size\_t}                          \mbox{\hyperlink{class_c_moves_ade705a82b36237a73795914d0127564c}{get\_game\_move}}   ( ); }
+\DoxyCodeLine{69         }
+\DoxyCodeLine{75         \textcolor{keywordtype}{void}                            \mbox{\hyperlink{class_c_moves_a058ac6df1e59d9563a61b01262725e08}{write\_to\_file}}   ( ostream\& file );}
+\DoxyCodeLine{76         }
+\DoxyCodeLine{82         \textcolor{keywordtype}{void}                            \mbox{\hyperlink{class_c_moves_a00bf668c9cac79c052d6fbf3ab8da7b6}{write\_from\_file}} ( istream\& file );}
+\DoxyCodeLine{83     \textcolor{keyword}{private}:        }
+\DoxyCodeLine{84         \textcolor{keywordtype}{size\_t}                          m\_Map\_Number;}
+\DoxyCodeLine{85         unordered\_map < char, size\_t >  m\_Attackers;}
+\DoxyCodeLine{86         queue < size\_t >                m\_Game\_Moves; }
+\DoxyCodeLine{87 \};}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

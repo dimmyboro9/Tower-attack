@@ -1,0 +1,5 @@
+<map id="CGame" name="CGame">
+<area shape="rect" id="node1" title="Abstract class that represents all ways to provide the game ( real step game or record )" alt="" coords="93,5,163,32"/>
+<area shape="rect" id="node2" href="$class_c_record_game.html" title="Class that represents game records." alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node3" href="$class_c_start_game.html" title="Class that represents real step game between player and computer." alt="" coords="144,80,245,107"/>
+</map>

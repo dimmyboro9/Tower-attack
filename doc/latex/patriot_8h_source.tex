@@ -1,0 +1,31 @@
+\hypertarget{patriot_8h_source}{}\doxysection{patriot.\+h}
+\mbox{\hyperlink{patriot_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PATRIOT\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PATRIOT\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{towers_8h}{towers.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_patriot}{CPatriot}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_tower}{CTower}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15                                 \mbox{\hyperlink{class_c_patriot_a8f84e52a291ce08e9b42d2060eb6a630}{CPatriot}}        ( );}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_c_model}{CModel}}*                 \mbox{\hyperlink{class_c_patriot_ae287a036e27bdc69b83b911e5f52c86b}{clone}}           ( ) \textcolor{keyword}{const override};}
+\DoxyCodeLine{22          }
+\DoxyCodeLine{36         \textcolor{keywordtype}{bool}                    \mbox{\hyperlink{class_c_patriot_aec849e4d4fac2657d7f5cb7de0c9ca37}{attack}}          ( \mbox{\hyperlink{class_c_map}{CMap}}\& mappy, \textcolor{keyword}{const} \mbox{\hyperlink{class_c_model}{CModel}}\& victim ) \textcolor{keyword}{override};}
+\DoxyCodeLine{37     }
+\DoxyCodeLine{38     \textcolor{keyword}{private}:}
+\DoxyCodeLine{39         \textcolor{keywordtype}{size\_t}                  m\_Attack\_Number;}
+\DoxyCodeLine{40         \textcolor{keyword}{enum} Stats : \textcolor{keywordtype}{size\_t}}
+\DoxyCodeLine{41         \{}
+\DoxyCodeLine{42             PAT\_HP = 350,}
+\DoxyCodeLine{43             PAT\_DAM = 30,}
+\DoxyCodeLine{44             PAT\_RAN = 2}
+\DoxyCodeLine{45         \};}
+\DoxyCodeLine{46         \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t}     DAM\_DIVIDER = 2;}
+\DoxyCodeLine{47         \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t}     ULTIMATE\_FREQ = 4;}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

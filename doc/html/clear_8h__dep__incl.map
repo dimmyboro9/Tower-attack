@@ -1,0 +1,15 @@
+<map id="clear.h" name="clear.h">
+<area shape="rect" id="node1" title=" " alt="" coords="449,5,514,32"/>
+<area shape="rect" id="node2" href="$clear_8cpp.html" title=" " alt="" coords="219,80,299,107"/>
+<area shape="rect" id="node3" href="$exit__game_8h.html" title=" " alt="" coords="323,80,426,107"/>
+<area shape="rect" id="node9" href="$run_8cpp.html" title=" " alt="" coords="326,304,397,331"/>
+<area shape="rect" id="node13" href="$start__game_8cpp.html" title=" " alt="" coords="459,304,581,331"/>
+<area shape="rect" id="node4" href="$exit__game_8cpp.html" title=" " alt="" coords="143,155,262,181"/>
+<area shape="rect" id="node5" href="$game_8h.html" title=" " alt="" coords="286,155,357,181"/>
+<area shape="rect" id="node6" href="$game_8cpp.html" title=" " alt="" coords="251,229,338,256"/>
+<area shape="rect" id="node7" href="$record__game_8h.html" title=" " alt="" coords="109,229,227,256"/>
+<area shape="rect" id="node10" href="$run_8h.html" title=" " alt="" coords="30,229,85,256"/>
+<area shape="rect" id="node12" href="$start__game_8h.html" title=" " alt="" coords="362,229,470,256"/>
+<area shape="rect" id="node8" href="$record__game_8cpp.html" title=" " alt="" coords="113,304,247,331"/>
+<area shape="rect" id="node11" href="$main_8cpp.html" title=" " alt="" coords="5,304,88,331"/>
+</map>

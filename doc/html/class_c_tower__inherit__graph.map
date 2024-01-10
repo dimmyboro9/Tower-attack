@@ -1,0 +1,9 @@
+<map id="CTower" name="CTower">
+<area shape="rect" id="node1" title="Class that represents all towers on the map." alt="" coords="195,155,265,181"/>
+<area shape="rect" id="node4" href="$class_c_burakov.html" title="Class that represents one type of tower." alt="" coords="5,229,89,256"/>
+<area shape="rect" id="node5" href="$class_c_megadurum.html" title="Class that represents one type of tower." alt="" coords="114,229,223,256"/>
+<area shape="rect" id="node6" href="$class_c_neptune.html" title="Class that represents one type of tower." alt="" coords="248,229,335,256"/>
+<area shape="rect" id="node7" href="$class_c_patriot.html" title="Class that represents one type of tower." alt="" coords="359,229,432,256"/>
+<area shape="rect" id="node2" href="$class_c_non___fixed___model.html" title="Class that represents all non&#45;fixed models on the map." alt="" coords="157,80,303,107"/>
+<area shape="rect" id="node3" href="$class_c_model.html" title="Abstract class that represents all models on the map." alt="" coords="195,5,265,32"/>
+</map>

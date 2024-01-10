@@ -1,0 +1,15 @@
+<map id="CNon_Fixed_Model" name="CNon_Fixed_Model">
+<area shape="rect" id="node1" title="Class that represents all non&#45;fixed models on the map." alt="" coords="383,80,528,107"/>
+<area shape="rect" id="node3" href="$class_c_attacker.html" title="Class that represents all attackers on the map." alt="" coords="247,155,333,181"/>
+<area shape="rect" id="node9" href="$class_c_tower.html" title="Class that represents all towers on the map." alt="" coords="638,155,707,181"/>
+<area shape="rect" id="node2" href="$class_c_model.html" title="Abstract class that represents all models on the map." alt="" coords="420,5,491,32"/>
+<area shape="rect" id="node4" href="$class_c_alexandr.html" title="Class that represents one type of attacking player." alt="" coords="5,229,95,256"/>
+<area shape="rect" id="node5" href="$class_c_freak.html" title="Class that represents one type of attacking player." alt="" coords="119,229,186,256"/>
+<area shape="rect" id="node6" href="$class_c_max.html" title="Class that represents one type of attacking player." alt="" coords="210,229,269,256"/>
+<area shape="rect" id="node7" href="$class_c_nagibator.html" title="Class that represents one type of attacking player." alt="" coords="293,229,388,256"/>
+<area shape="rect" id="node8" href="$class_c_viking.html" title="Class that represents one type of attacking player." alt="" coords="413,229,485,256"/>
+<area shape="rect" id="node10" href="$class_c_burakov.html" title="Class that represents one type of tower." alt="" coords="509,229,593,256"/>
+<area shape="rect" id="node11" href="$class_c_megadurum.html" title="Class that represents one type of tower." alt="" coords="618,229,727,256"/>
+<area shape="rect" id="node12" href="$class_c_neptune.html" title="Class that represents one type of tower." alt="" coords="752,229,839,256"/>
+<area shape="rect" id="node13" href="$class_c_patriot.html" title="Class that represents one type of tower." alt="" coords="863,229,936,256"/>
+</map>

@@ -1,0 +1,463 @@
+\hypertarget{class_c_map}{}\doxysection{CMap Class Reference}
+\label{class_c_map}\index{CMap@{CMap}}
+
+
+Class that represents the map on which all game actions take place.  
+
+
+
+
+{\ttfamily \#include $<$map.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_map_ab8a2a494911646271408b74839e051fc}{CMap}} ()=default
+\item 
+\mbox{\hyperlink{class_c_map_aa0a3dc5c44d7b39bfe032c4ce3daba6c}{CMap}} (size\+\_\+t len, size\+\_\+t wid, size\+\_\+t coins, size\+\_\+t num)
+\item 
+\mbox{\hyperlink{class_c_map_aaeac2c14c266b2c212f37efd94bdbb42}{$\sim$\+CMap}} () noexcept=default
+\item 
+void \mbox{\hyperlink{class_c_map_af52ff227962a0ffbaf933860f378460e}{add\+\_\+fixed\+\_\+model}} (const \mbox{\hyperlink{class_c_model}{CModel}} \&model, const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&coordinates)
+\begin{DoxyCompactList}\small\item\em This method implements adding fixed model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_map_a85013ab1aae77e03d333b120c31d5bb3}{add\+\_\+attacker}} (const shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_model}{CModel}} $>$ \&attacker, size\+\_\+t entry)
+\begin{DoxyCompactList}\small\item\em This method implements adding attackers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_a888a4207f241494880ee2ebd59c7ec9f}{add\+\_\+tower}} (const shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_model}{CModel}} $>$ \&tower, \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&location)
+\begin{DoxyCompactList}\small\item\em This method implements adding towers. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_map_ae0cc11360583455fbc444c628011a1eb}{add\+\_\+random\+\_\+tower}} (const shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_model}{CModel}} $>$ \&tower, \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&location)
+\begin{DoxyCompactList}\small\item\em This method implements adding towers to the random places of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_a36abe42c2017e59d29892b8b3a0dc1a9}{remove\+\_\+model}} (const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&coordinates)
+\begin{DoxyCompactList}\small\item\em This method removes models from the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_a3d97107b2f888eaf8333fe90f624719c}{swap\+\_\+models}} (const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&from, const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&to)
+\begin{DoxyCompactList}\small\item\em This method swaps models on the map. \end{DoxyCompactList}\item 
+queue$<$ size\+\_\+t $>$ \mbox{\hyperlink{class_c_map_a68bc84eba9a46a7d2a9b6c90fb3fa471}{enter\+\_\+the\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em This method add all attackers, who are waiting on the entrance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_a65e57c4e61dfe25a3e93d713882919ac}{save\+\_\+map}} (const string \&file) const
+\begin{DoxyCompactList}\small\item\em This method saves map to the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_af7e412728f4583cf92204fe1f93a0627}{load\+\_\+map}} (const string \&file)
+\begin{DoxyCompactList}\small\item\em This method loades map from the file. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_c_map_ab165dd1fe0a516b0add8aec5130d10df}{show\+\_\+coins}} () const
+\begin{DoxyCompactList}\small\item\em This method return amount of coins on which player can buy attackers. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_c_map_a4d6809afc18e00b8cbe2167889b56901}{num\+\_\+of\+\_\+towers}} () const
+\begin{DoxyCompactList}\small\item\em This method return the number of towers that are available to the computer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_map_abaafc6069565235806da7fa2b1fceac6}{decrease\+\_\+coins}} (size\+\_\+t diff)
+\begin{DoxyCompactList}\small\item\em This method decreases amount of coins after a purchase. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_map_aebae61a052749371dbbca033fb4da79f}{is\+\_\+free}} (const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&coordinates) const
+\begin{DoxyCompactList}\small\item\em This method returns information about whether this position is free. \end{DoxyCompactList}\item 
+vector$<$ pair$<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}}, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_model}{CModel}} $>$ $>$ $>$ \mbox{\hyperlink{class_c_map_aacdc2398e927bc944f958fe938068ce4}{return\+\_\+neighbours}} (int range, const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&pos) const
+\begin{DoxyCompactList}\small\item\em This method returns all neighbours of a given position on the map in given range. \end{DoxyCompactList}\item 
+list$<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} $>$ \mbox{\hyperlink{class_c_map_abf2f74f1b44abd3875cc4cce28d696db}{shortest\+\_\+path}} (size\+\_\+t entry) const
+\begin{DoxyCompactList}\small\item\em This method returns the shortest path from given entrance to the exit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_afffadc959282ef8fff63b3c59191f9f2}{print\+\_\+map}} (ostream \&os) const
+\begin{DoxyCompactList}\small\item\em This method prints map. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_map_a107754cdcc48b86dd0930f356f3e3f34}{print\+\_\+one\+\_\+row}} (ostream \&os, size\+\_\+t row) const
+\begin{DoxyCompactList}\small\item\em This method prints one row of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_a5abef208e63b50dbfdf250549060ca6a}{print\+\_\+map\+\_\+info}} (ostream \&os) const
+\begin{DoxyCompactList}\small\item\em This method prints such information about the map as amount of coins and number of towers on this map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_c_map_a73e76a8b070779e6ad0f74b15762e735}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_c_map}{CMap}} \&src)
+\begin{DoxyCompactList}\small\item\em Overloaded operator ==. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents the map on which all game actions take place. 
+
+It has\+: m\+\_\+\+Length -\/ length of map m\+\_\+\+Width -\/ width of map m\+\_\+\+Coins -\/ amount of coins on which player can buy attackers m\+\_\+\+Num\+\_\+of towers -\/ the number of towers that are available to the computer m\+\_\+\+Models -\/ all map models ( even free ) that together create a whole map m\+\_\+\+Entrances -\/ all map entrances and their coordinates m\+\_\+\+Exit -\/ coordinates of map exit 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_map_ab8a2a494911646271408b74839e051fc}\label{class_c_map_ab8a2a494911646271408b74839e051fc}} 
+\index{CMap@{CMap}!CMap@{CMap}}
+\index{CMap@{CMap}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{CMap()}{CMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CMap\+::\+CMap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_c_map_aa0a3dc5c44d7b39bfe032c4ce3daba6c}\label{class_c_map_aa0a3dc5c44d7b39bfe032c4ce3daba6c}} 
+\index{CMap@{CMap}!CMap@{CMap}}
+\index{CMap@{CMap}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{CMap()}{CMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CMap\+::\+CMap (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{len,  }\item[{size\+\_\+t}]{wid,  }\item[{size\+\_\+t}]{coins,  }\item[{size\+\_\+t}]{num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_map_aaeac2c14c266b2c212f37efd94bdbb42}\label{class_c_map_aaeac2c14c266b2c212f37efd94bdbb42}} 
+\index{CMap@{CMap}!````~CMap@{$\sim$CMap}}
+\index{````~CMap@{$\sim$CMap}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMap()}{~CMap()}}
+{\footnotesize\ttfamily CMap\+::$\sim$\+CMap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_map_a85013ab1aae77e03d333b120c31d5bb3}\label{class_c_map_a85013ab1aae77e03d333b120c31d5bb3}} 
+\index{CMap@{CMap}!add\_attacker@{add\_attacker}}
+\index{add\_attacker@{add\_attacker}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{add\_attacker()}{add\_attacker()}}
+{\footnotesize\ttfamily bool CMap\+::add\+\_\+attacker (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_model}{CModel}} $>$ \&}]{attacker,  }\item[{size\+\_\+t}]{entry }\end{DoxyParamCaption})}
+
+
+
+This method implements adding attackers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em attacker} & pointer on attacker that will enter the entrance \\
+\hline
+\mbox{\texttt{ in}}  & {\em entry} & entry, on which will attacker enter the game\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if attacker entered the game \\
+\hline
+{\em return} & FALSE if attacker didn\textquotesingle{}t enter the game \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_map_af52ff227962a0ffbaf933860f378460e}\label{class_c_map_af52ff227962a0ffbaf933860f378460e}} 
+\index{CMap@{CMap}!add\_fixed\_model@{add\_fixed\_model}}
+\index{add\_fixed\_model@{add\_fixed\_model}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{add\_fixed\_model()}{add\_fixed\_model()}}
+{\footnotesize\ttfamily void CMap\+::add\+\_\+fixed\+\_\+model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_model}{CModel}} \&}]{model,  }\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{coordinates }\end{DoxyParamCaption})}
+
+
+
+This method implements adding fixed model. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em model} & fixed model that will be added to the map \\
+\hline
+\mbox{\texttt{ in}}  & {\em coordinates} & coordinates, on which will fixed model be added to the map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_ae0cc11360583455fbc444c628011a1eb}\label{class_c_map_ae0cc11360583455fbc444c628011a1eb}} 
+\index{CMap@{CMap}!add\_random\_tower@{add\_random\_tower}}
+\index{add\_random\_tower@{add\_random\_tower}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{add\_random\_tower()}{add\_random\_tower()}}
+{\footnotesize\ttfamily bool CMap\+::add\+\_\+random\+\_\+tower (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_model}{CModel}} $>$ \&}]{tower,  }\item[{\mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{location }\end{DoxyParamCaption})}
+
+
+
+This method implements adding towers to the random places of the map. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tower} & pointer on tower that will be added to the map \\
+\hline
+\mbox{\texttt{ in}}  & {\em location} & coordinates, on which will tower be added to the map\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if tower was added to the game \\
+\hline
+{\em return} & FALSE if tower wasn\textquotesingle{}t added to the game \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_map_a888a4207f241494880ee2ebd59c7ec9f}\label{class_c_map_a888a4207f241494880ee2ebd59c7ec9f}} 
+\index{CMap@{CMap}!add\_tower@{add\_tower}}
+\index{add\_tower@{add\_tower}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{add\_tower()}{add\_tower()}}
+{\footnotesize\ttfamily void CMap\+::add\+\_\+tower (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_model}{CModel}} $>$ \&}]{tower,  }\item[{\mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{location }\end{DoxyParamCaption})}
+
+
+
+This method implements adding towers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tower} & pointer on tower that will be added to the map \\
+\hline
+\mbox{\texttt{ in}}  & {\em location} & coordinates, on which will tower be added to the map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_abaafc6069565235806da7fa2b1fceac6}\label{class_c_map_abaafc6069565235806da7fa2b1fceac6}} 
+\index{CMap@{CMap}!decrease\_coins@{decrease\_coins}}
+\index{decrease\_coins@{decrease\_coins}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{decrease\_coins()}{decrease\_coins()}}
+{\footnotesize\ttfamily bool CMap\+::decrease\+\_\+coins (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{diff }\end{DoxyParamCaption})}
+
+
+
+This method decreases amount of coins after a purchase. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em diff} & amount of coins that were spent on the purchase\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if there were enough coins to make a purchase \\
+\hline
+{\em return} & FALSE if there weren\textquotesingle{}t enough coins to make a purchase \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_map_a68bc84eba9a46a7d2a9b6c90fb3fa471}\label{class_c_map_a68bc84eba9a46a7d2a9b6c90fb3fa471}} 
+\index{CMap@{CMap}!enter\_the\_game@{enter\_the\_game}}
+\index{enter\_the\_game@{enter\_the\_game}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{enter\_the\_game()}{enter\_the\_game()}}
+{\footnotesize\ttfamily queue$<$ size\+\_\+t $>$ CMap\+::enter\+\_\+the\+\_\+game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method add all attackers, who are waiting on the entrance. 
+
+\begin{DoxyReturn}{Returns}
+queue \texorpdfstring{$<$}{<} size\+\_\+t \texorpdfstring{$>$}{>} -\/ queue entries, from which were attackers added to the game 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_map_aebae61a052749371dbbca033fb4da79f}\label{class_c_map_aebae61a052749371dbbca033fb4da79f}} 
+\index{CMap@{CMap}!is\_free@{is\_free}}
+\index{is\_free@{is\_free}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{is\_free()}{is\_free()}}
+{\footnotesize\ttfamily bool CMap\+::is\+\_\+free (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{coordinates }\end{DoxyParamCaption}) const}
+
+
+
+This method returns information about whether this position is free. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em coordinates} & coordinate of this position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this position is free ( on this position is located model of the class \mbox{\hyperlink{class_c_free}{CFree}} ) \\
+\hline
+{\em return} & FALSE if this position isn\textquotesingle{}t free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_map_af7e412728f4583cf92204fe1f93a0627}\label{class_c_map_af7e412728f4583cf92204fe1f93a0627}} 
+\index{CMap@{CMap}!load\_map@{load\_map}}
+\index{load\_map@{load\_map}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{load\_map()}{load\_map()}}
+{\footnotesize\ttfamily void CMap\+::load\+\_\+map (\begin{DoxyParamCaption}\item[{const string \&}]{file }\end{DoxyParamCaption})}
+
+
+
+This method loades map from the file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & file, from where the map will be loaded \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_a4d6809afc18e00b8cbe2167889b56901}\label{class_c_map_a4d6809afc18e00b8cbe2167889b56901}} 
+\index{CMap@{CMap}!num\_of\_towers@{num\_of\_towers}}
+\index{num\_of\_towers@{num\_of\_towers}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{num\_of\_towers()}{num\_of\_towers()}}
+{\footnotesize\ttfamily size\+\_\+t CMap\+::num\+\_\+of\+\_\+towers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method return the number of towers that are available to the computer. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t -\/ number of towers that are available to the computer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_map_afffadc959282ef8fff63b3c59191f9f2}\label{class_c_map_afffadc959282ef8fff63b3c59191f9f2}} 
+\index{CMap@{CMap}!print\_map@{print\_map}}
+\index{print\_map@{print\_map}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{print\_map()}{print\_map()}}
+{\footnotesize\ttfamily void CMap\+::print\+\_\+map (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+This method prints map. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & output stream where to print the map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_a5abef208e63b50dbfdf250549060ca6a}\label{class_c_map_a5abef208e63b50dbfdf250549060ca6a}} 
+\index{CMap@{CMap}!print\_map\_info@{print\_map\_info}}
+\index{print\_map\_info@{print\_map\_info}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{print\_map\_info()}{print\_map\_info()}}
+{\footnotesize\ttfamily void CMap\+::print\+\_\+map\+\_\+info (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+This method prints such information about the map as amount of coins and number of towers on this map. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & output stream where to print this information \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_a107754cdcc48b86dd0930f356f3e3f34}\label{class_c_map_a107754cdcc48b86dd0930f356f3e3f34}} 
+\index{CMap@{CMap}!print\_one\_row@{print\_one\_row}}
+\index{print\_one\_row@{print\_one\_row}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{print\_one\_row()}{print\_one\_row()}}
+{\footnotesize\ttfamily bool CMap\+::print\+\_\+one\+\_\+row (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{size\+\_\+t}]{row }\end{DoxyParamCaption}) const}
+
+
+
+This method prints one row of the map. 
+
+This method is used for beautiful image of the progress of the game due to the fact that ncourses library is not used
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row} & which row has been printed \\
+\hline
+\mbox{\texttt{ in}}  & {\em os} & output stream where to print the row of the map\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if map\textquotesingle{}s width is more than or equal to the given row \\
+\hline
+{\em return} & FALSE if map\textquotesingle{}s width is less than or equal to the given row \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_map_a36abe42c2017e59d29892b8b3a0dc1a9}\label{class_c_map_a36abe42c2017e59d29892b8b3a0dc1a9}} 
+\index{CMap@{CMap}!remove\_model@{remove\_model}}
+\index{remove\_model@{remove\_model}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{remove\_model()}{remove\_model()}}
+{\footnotesize\ttfamily void CMap\+::remove\+\_\+model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{coordinates }\end{DoxyParamCaption})}
+
+
+
+This method removes models from the map. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em coordinates} & coordinates, from which will model be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_aacdc2398e927bc944f958fe938068ce4}\label{class_c_map_aacdc2398e927bc944f958fe938068ce4}} 
+\index{CMap@{CMap}!return\_neighbours@{return\_neighbours}}
+\index{return\_neighbours@{return\_neighbours}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{return\_neighbours()}{return\_neighbours()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}}, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_model}{CModel}} $>$ $>$ $>$ CMap\+::return\+\_\+neighbours (\begin{DoxyParamCaption}\item[{int}]{range,  }\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+This method returns all neighbours of a given position on the map in given range. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em range} & range in which to look for neighbours \\
+\hline
+\mbox{\texttt{ in}}  & {\em pos} & coordinate of given position\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em vector} & \texorpdfstring{$<$}{<} pair \texorpdfstring{$<$}{<} \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}}, shared\+\_\+ptr \texorpdfstring{$<$}{<} \mbox{\hyperlink{class_c_model}{CModel}} \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>} -\/ vector of all neighbours in given range from given position with neigbour coordinates and pointer on him \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_map_a65e57c4e61dfe25a3e93d713882919ac}\label{class_c_map_a65e57c4e61dfe25a3e93d713882919ac}} 
+\index{CMap@{CMap}!save\_map@{save\_map}}
+\index{save\_map@{save\_map}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{save\_map()}{save\_map()}}
+{\footnotesize\ttfamily void CMap\+::save\+\_\+map (\begin{DoxyParamCaption}\item[{const string \&}]{file }\end{DoxyParamCaption}) const}
+
+
+
+This method saves map to the file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & file, where the map will be saved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_abf2f74f1b44abd3875cc4cce28d696db}\label{class_c_map_abf2f74f1b44abd3875cc4cce28d696db}} 
+\index{CMap@{CMap}!shortest\_path@{shortest\_path}}
+\index{shortest\_path@{shortest\_path}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{shortest\_path()}{shortest\_path()}}
+{\footnotesize\ttfamily list$<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} $>$ CMap\+::shortest\+\_\+path (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{entry }\end{DoxyParamCaption}) const}
+
+
+
+This method returns the shortest path from given entrance to the exit. 
+
+Using BFS-\/algorithm to implement this task
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em entry} & entry from which the path to the end is saught\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em list} & \texorpdfstring{$<$}{<} \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \texorpdfstring{$>$}{>} -\/ path from entry to the exit \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_map_ab165dd1fe0a516b0add8aec5130d10df}\label{class_c_map_ab165dd1fe0a516b0add8aec5130d10df}} 
+\index{CMap@{CMap}!show\_coins@{show\_coins}}
+\index{show\_coins@{show\_coins}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{show\_coins()}{show\_coins()}}
+{\footnotesize\ttfamily size\+\_\+t CMap\+::show\+\_\+coins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method return amount of coins on which player can buy attackers. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t -\/ amount of coins on which player can buy attackers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_map_a3d97107b2f888eaf8333fe90f624719c}\label{class_c_map_a3d97107b2f888eaf8333fe90f624719c}} 
+\index{CMap@{CMap}!swap\_models@{swap\_models}}
+\index{swap\_models@{swap\_models}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{swap\_models()}{swap\_models()}}
+{\footnotesize\ttfamily void CMap\+::swap\+\_\+models (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{from,  }\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{to }\end{DoxyParamCaption})}
+
+
+
+This method swaps models on the map. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em from} & coordinates, from which will model be swapped \\
+\hline
+\mbox{\texttt{ in}}  & {\em to} & coordinates, to which will model be swapped \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_c_map_a73e76a8b070779e6ad0f74b15762e735}\label{class_c_map_a73e76a8b070779e6ad0f74b15762e735}} 
+\index{CMap@{CMap}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!CMap@{CMap}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_c_map}{CMap}} \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloaded operator ==. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & output stream \\
+\hline
+\mbox{\texttt{ in}}  & {\em src} & map that will be write out\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em output} & stream \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{map_8h}{map.\+h}}\item 
+\mbox{\hyperlink{map_8cpp}{map.\+cpp}}\end{DoxyCompactItemize}

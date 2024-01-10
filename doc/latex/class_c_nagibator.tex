@@ -1,0 +1,112 @@
+\hypertarget{class_c_nagibator}{}\doxysection{CNagibator Class Reference}
+\label{class_c_nagibator}\index{CNagibator@{CNagibator}}
+
+
+Class that represents one type of attacking player.  
+
+
+
+
+{\ttfamily \#include $<$nagibator.\+h$>$}
+
+
+
+Inheritance diagram for CNagibator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_c_nagibator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CNagibator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_c_nagibator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_nagibator_a2296d200d42cf8a75a209bfe453f675f}{CNagibator}} (size\+\_\+t attack\+\_\+num=0)
+\item 
+\mbox{\hyperlink{class_c_model}{CModel}} $\ast$ \mbox{\hyperlink{class_c_nagibator_ae4cbbafff898718909fab47cd32d08a6}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em That method makes a copy of model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_nagibator_a98f96f57131cef8409bd05a1664c6c75}{get\+\_\+hit}} (size\+\_\+t damage) override
+\begin{DoxyCompactList}\small\item\em That method implements taking damage in a special way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents one type of attacking player. 
+
+It has\+: m\+\_\+\+Attack\+\_\+\+Number -\/ number of attacks perfomed by tower 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_nagibator_a2296d200d42cf8a75a209bfe453f675f}\label{class_c_nagibator_a2296d200d42cf8a75a209bfe453f675f}} 
+\index{CNagibator@{CNagibator}!CNagibator@{CNagibator}}
+\index{CNagibator@{CNagibator}!CNagibator@{CNagibator}}
+\doxysubsubsection{\texorpdfstring{CNagibator()}{CNagibator()}}
+{\footnotesize\ttfamily CNagibator\+::\+CNagibator (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{attack\+\_\+num = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_nagibator_ae4cbbafff898718909fab47cd32d08a6}\label{class_c_nagibator_ae4cbbafff898718909fab47cd32d08a6}} 
+\index{CNagibator@{CNagibator}!clone@{clone}}
+\index{clone@{clone}!CNagibator@{CNagibator}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ CNagibator\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method makes a copy of model. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on class \mbox{\hyperlink{class_c_model}{CModel}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_attacker_a00cc3eab5085f3cc6cacd851ebfb3fd8}{CAttacker}}.
+
+\mbox{\Hypertarget{class_c_nagibator_a98f96f57131cef8409bd05a1664c6c75}\label{class_c_nagibator_a98f96f57131cef8409bd05a1664c6c75}} 
+\index{CNagibator@{CNagibator}!get\_hit@{get\_hit}}
+\index{get\_hit@{get\_hit}!CNagibator@{CNagibator}}
+\doxysubsubsection{\texorpdfstring{get\_hit()}{get\_hit()}}
+{\footnotesize\ttfamily bool CNagibator\+::get\+\_\+hit (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method implements taking damage in a special way. 
+
+With some frequence he gets less damage than usual
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em damage} & The amount of damage the model receives\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if victim has more than 0 HP \\
+\hline
+{\em return} & FALSE if victim has 0 HP \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_model_a26534753e68e505c722f8f3c3c54a126}{CModel}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{nagibator_8h}{nagibator.\+h}}\item 
+\mbox{\hyperlink{nagibator_8cpp}{nagibator.\+cpp}}\end{DoxyCompactItemize}

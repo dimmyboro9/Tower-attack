@@ -1,0 +1,110 @@
+\hypertarget{class_c_tower}{}\doxysection{CTower Class Reference}
+\label{class_c_tower}\index{CTower@{CTower}}
+
+
+Class that represents all towers on the map.  
+
+
+
+
+{\ttfamily \#include $<$towers.\+h$>$}
+
+
+
+Inheritance diagram for CTower\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_tower__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CTower\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_c_tower__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_tower_a92d161457423835ee99cb15f512cfbd8}{CTower}} (const string \&\mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}}, char \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}}, size\+\_\+t hp, size\+\_\+t damage, size\+\_\+t range)
+\item 
+virtual \mbox{\hyperlink{class_c_tower_a7a37f2705c802820ff41030b40bbc858}{$\sim$\+CTower}} () noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ \mbox{\hyperlink{class_c_tower_a1da1a904455d0ab4e2380ce951068ee7}{clone}} () const override=0
+\begin{DoxyCompactList}\small\item\em That method makes a copy of model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_tower_a7568f8a3bd97789f5f1f2d0c15f67f93}{print\+\_\+info}} (ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Method that prints all model\textquotesingle{}s stats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents all towers on the map. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_tower_a92d161457423835ee99cb15f512cfbd8}\label{class_c_tower_a92d161457423835ee99cb15f512cfbd8}} 
+\index{CTower@{CTower}!CTower@{CTower}}
+\index{CTower@{CTower}!CTower@{CTower}}
+\doxysubsubsection{\texorpdfstring{CTower()}{CTower()}}
+{\footnotesize\ttfamily CTower\+::\+CTower (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{char}]{sign,  }\item[{size\+\_\+t}]{hp,  }\item[{size\+\_\+t}]{damage,  }\item[{size\+\_\+t}]{range }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tower_a7a37f2705c802820ff41030b40bbc858}\label{class_c_tower_a7a37f2705c802820ff41030b40bbc858}} 
+\index{CTower@{CTower}!````~CTower@{$\sim$CTower}}
+\index{````~CTower@{$\sim$CTower}!CTower@{CTower}}
+\doxysubsubsection{\texorpdfstring{$\sim$CTower()}{~CTower()}}
+{\footnotesize\ttfamily virtual CTower\+::$\sim$\+CTower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_tower_a1da1a904455d0ab4e2380ce951068ee7}\label{class_c_tower_a1da1a904455d0ab4e2380ce951068ee7}} 
+\index{CTower@{CTower}!clone@{clone}}
+\index{clone@{clone}!CTower@{CTower}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ CTower\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+That method makes a copy of model. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on class \mbox{\hyperlink{class_c_model}{CModel}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_non___fixed___model_ad2d274d6ca20e75f62f8fbec84d66995}{CNon\+\_\+\+Fixed\+\_\+\+Model}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_c_burakov_abfb07f5cac25bdfb9767c69c0a926832}{CBurakov}}, \mbox{\hyperlink{class_c_megadurum_a8c1bb9c92b1baee40160d100d2685713}{CMegadurum}}, \mbox{\hyperlink{class_c_neptune_af296767ce0d71612482acffc00eb7d1b}{CNeptune}}, and \mbox{\hyperlink{class_c_patriot_ae287a036e27bdc69b83b911e5f52c86b}{CPatriot}}.
+
+\mbox{\Hypertarget{class_c_tower_a7568f8a3bd97789f5f1f2d0c15f67f93}\label{class_c_tower_a7568f8a3bd97789f5f1f2d0c15f67f93}} 
+\index{CTower@{CTower}!print\_info@{print\_info}}
+\index{print\_info@{print\_info}!CTower@{CTower}}
+\doxysubsubsection{\texorpdfstring{print\_info()}{print\_info()}}
+{\footnotesize\ttfamily void CTower\+::print\+\_\+info (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Method that prints all model\textquotesingle{}s stats. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & Stream, where will be sign printed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_non___fixed___model_abf2a19d909d797dbad6d26a5413806f2}{CNon\+\_\+\+Fixed\+\_\+\+Model}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{towers_8h}{towers.\+h}}\item 
+\mbox{\hyperlink{towers_8cpp}{towers.\+cpp}}\end{DoxyCompactItemize}

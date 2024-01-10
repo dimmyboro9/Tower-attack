@@ -1,0 +1,207 @@
+\hypertarget{class_c_attacker}{}\doxysection{CAttacker Class Reference}
+\label{class_c_attacker}\index{CAttacker@{CAttacker}}
+
+
+Class that represents all attackers on the map.  
+
+
+
+
+{\ttfamily \#include $<$attackers.\+h$>$}
+
+
+
+Inheritance diagram for CAttacker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_attacker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CAttacker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_c_attacker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_attacker_a68d65964b49a89e87075fecadb0385c1}{CAttacker}} (const string \&\mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}}, char \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}}, size\+\_\+t hp, size\+\_\+t damage, size\+\_\+t speed, size\+\_\+t range, size\+\_\+t price)
+\item 
+virtual \mbox{\hyperlink{class_c_attacker_acfcca2694a897fb34b22946cb24926e8}{$\sim$\+CAttacker}} () noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ \mbox{\hyperlink{class_c_attacker_a00cc3eab5085f3cc6cacd851ebfb3fd8}{clone}} () const override=0
+\begin{DoxyCompactList}\small\item\em That method makes a copy of model. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_attacker_afbdd52e8de5ca8f0bec666fcbc54b629}{create\+\_\+route}} (list$<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} $>$ route)
+\begin{DoxyCompactList}\small\item\em Method that adds to attacker his route. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_attacker_ac3946c5644c0deeb5ddcce8b9bb4417d}{make\+\_\+move}} (\mbox{\hyperlink{class_c_map}{CMap}} \&mappy)
+\begin{DoxyCompactList}\small\item\em Method that moves attackers. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_c_attacker_a9d8dde647078ca58afa6f93cd4163106}{show\+\_\+price}} () const
+\begin{DoxyCompactList}\small\item\em Method that shows attacker\textquotesingle{}s price. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_attacker_a454927b4d536edf3452680e4ad67a2fc}{print\+\_\+info}} (ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Method that prints all model\textquotesingle{}s stats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const size\+\_\+t \mbox{\hyperlink{class_c_attacker_ab3f028f7b33c06d51f79c1fbf40359a5}{m\+\_\+\+Speed}}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_attacker_af53d7ad2dd623d6e6665418c8aa39314}{m\+\_\+\+Price}}
+\item 
+list$<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} $>$ \mbox{\hyperlink{class_c_attacker_adaa2a0c7d2149265b6fd7a2ef3a3e288}{m\+\_\+\+Route}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents all attackers on the map. 
+
+It has\+: m\+\_\+\+Speed -\/ number of cells that attacker moves to m\+\_\+\+Price -\/ attacker\textquotesingle{}s price m\+\_\+\+Route -\/ attacker\textquotesingle{}s route to the exit 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_attacker_a68d65964b49a89e87075fecadb0385c1}\label{class_c_attacker_a68d65964b49a89e87075fecadb0385c1}} 
+\index{CAttacker@{CAttacker}!CAttacker@{CAttacker}}
+\index{CAttacker@{CAttacker}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{CAttacker()}{CAttacker()}}
+{\footnotesize\ttfamily CAttacker\+::\+CAttacker (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{char}]{sign,  }\item[{size\+\_\+t}]{hp,  }\item[{size\+\_\+t}]{damage,  }\item[{size\+\_\+t}]{speed,  }\item[{size\+\_\+t}]{range,  }\item[{size\+\_\+t}]{price }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_attacker_acfcca2694a897fb34b22946cb24926e8}\label{class_c_attacker_acfcca2694a897fb34b22946cb24926e8}} 
+\index{CAttacker@{CAttacker}!````~CAttacker@{$\sim$CAttacker}}
+\index{````~CAttacker@{$\sim$CAttacker}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{$\sim$CAttacker()}{~CAttacker()}}
+{\footnotesize\ttfamily virtual CAttacker\+::$\sim$\+CAttacker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_attacker_a00cc3eab5085f3cc6cacd851ebfb3fd8}\label{class_c_attacker_a00cc3eab5085f3cc6cacd851ebfb3fd8}} 
+\index{CAttacker@{CAttacker}!clone@{clone}}
+\index{clone@{clone}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ CAttacker\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+That method makes a copy of model. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on class \mbox{\hyperlink{class_c_model}{CModel}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_non___fixed___model_ad2d274d6ca20e75f62f8fbec84d66995}{CNon\+\_\+\+Fixed\+\_\+\+Model}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_c_alexandr_a2091a1626959bbabceea336d7f60f18b}{CAlexandr}}, \mbox{\hyperlink{class_c_freak_a7a52614f4681ed4ca7995db15fe4aada}{CFreak}}, \mbox{\hyperlink{class_c_max_a773a44e6c860cbd707183fc3624e966d}{CMax}}, \mbox{\hyperlink{class_c_nagibator_ae4cbbafff898718909fab47cd32d08a6}{CNagibator}}, and \mbox{\hyperlink{class_c_viking_a6afcb84b30b9e8fcd41797a2355f94f1}{CViking}}.
+
+\mbox{\Hypertarget{class_c_attacker_afbdd52e8de5ca8f0bec666fcbc54b629}\label{class_c_attacker_afbdd52e8de5ca8f0bec666fcbc54b629}} 
+\index{CAttacker@{CAttacker}!create\_route@{create\_route}}
+\index{create\_route@{create\_route}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{create\_route()}{create\_route()}}
+{\footnotesize\ttfamily void CAttacker\+::create\+\_\+route (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} $>$}]{route }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method that adds to attacker his route. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em route} & the path that attacker takes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_attacker_ac3946c5644c0deeb5ddcce8b9bb4417d}\label{class_c_attacker_ac3946c5644c0deeb5ddcce8b9bb4417d}} 
+\index{CAttacker@{CAttacker}!make\_move@{make\_move}}
+\index{make\_move@{make\_move}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{make\_move()}{make\_move()}}
+{\footnotesize\ttfamily bool CAttacker\+::make\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{CMap}} \&}]{mappy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method that moves attackers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mappy} & map, on which attacker moves\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & FALSE if attacker didn\textquotesingle{}t reach the exit \\
+\hline
+{\em return} & TRUE if attacker reached the exit \\
+\hline
+\end{DoxyRetVals}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_max_a77f0f4cb4637db49a16f13393dbb2ec1}{CMax}}.
+
+\mbox{\Hypertarget{class_c_attacker_a454927b4d536edf3452680e4ad67a2fc}\label{class_c_attacker_a454927b4d536edf3452680e4ad67a2fc}} 
+\index{CAttacker@{CAttacker}!print\_info@{print\_info}}
+\index{print\_info@{print\_info}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{print\_info()}{print\_info()}}
+{\footnotesize\ttfamily void CAttacker\+::print\+\_\+info (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Method that prints all model\textquotesingle{}s stats. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & Stream, where will be sign printed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_non___fixed___model_abf2a19d909d797dbad6d26a5413806f2}{CNon\+\_\+\+Fixed\+\_\+\+Model}}.
+
+\mbox{\Hypertarget{class_c_attacker_a9d8dde647078ca58afa6f93cd4163106}\label{class_c_attacker_a9d8dde647078ca58afa6f93cd4163106}} 
+\index{CAttacker@{CAttacker}!show\_price@{show\_price}}
+\index{show\_price@{show\_price}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{show\_price()}{show\_price()}}
+{\footnotesize\ttfamily size\+\_\+t CAttacker\+::show\+\_\+price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method that shows attacker\textquotesingle{}s price. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & size\+\_\+t value -\/ attacker\textquotesingle{}s price \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_attacker_af53d7ad2dd623d6e6665418c8aa39314}\label{class_c_attacker_af53d7ad2dd623d6e6665418c8aa39314}} 
+\index{CAttacker@{CAttacker}!m\_Price@{m\_Price}}
+\index{m\_Price@{m\_Price}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{m\_Price}{m\_Price}}
+{\footnotesize\ttfamily size\+\_\+t CAttacker\+::m\+\_\+\+Price\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_attacker_adaa2a0c7d2149265b6fd7a2ef3a3e288}\label{class_c_attacker_adaa2a0c7d2149265b6fd7a2ef3a3e288}} 
+\index{CAttacker@{CAttacker}!m\_Route@{m\_Route}}
+\index{m\_Route@{m\_Route}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{m\_Route}{m\_Route}}
+{\footnotesize\ttfamily list$<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} $>$ CAttacker\+::m\+\_\+\+Route\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_attacker_ab3f028f7b33c06d51f79c1fbf40359a5}\label{class_c_attacker_ab3f028f7b33c06d51f79c1fbf40359a5}} 
+\index{CAttacker@{CAttacker}!m\_Speed@{m\_Speed}}
+\index{m\_Speed@{m\_Speed}!CAttacker@{CAttacker}}
+\doxysubsubsection{\texorpdfstring{m\_Speed}{m\_Speed}}
+{\footnotesize\ttfamily const size\+\_\+t CAttacker\+::m\+\_\+\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{attackers_8h}{attackers.\+h}}\item 
+\mbox{\hyperlink{attackers_8cpp}{attackers.\+cpp}}\end{DoxyCompactItemize}

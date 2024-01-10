@@ -1,0 +1,28 @@
+var annotated_dup =
+[
+    [ "CAlexandr", "class_c_alexandr.html", "class_c_alexandr" ],
+    [ "CAttacker", "class_c_attacker.html", "class_c_attacker" ],
+    [ "CBurakov", "class_c_burakov.html", "class_c_burakov" ],
+    [ "CEntrance", "class_c_entrance.html", "class_c_entrance" ],
+    [ "CExit", "class_c_exit.html", "class_c_exit" ],
+    [ "CFixed_Model", "class_c_fixed___model.html", "class_c_fixed___model" ],
+    [ "CFreak", "class_c_freak.html", "class_c_freak" ],
+    [ "CFree", "class_c_free.html", "class_c_free" ],
+    [ "CGame", "class_c_game.html", "class_c_game" ],
+    [ "CMap", "class_c_map.html", "class_c_map" ],
+    [ "CMax", "class_c_max.html", "class_c_max" ],
+    [ "CMegadurum", "class_c_megadurum.html", "class_c_megadurum" ],
+    [ "CModel", "class_c_model.html", "class_c_model" ],
+    [ "CMoves", "class_c_moves.html", "class_c_moves" ],
+    [ "CNagibator", "class_c_nagibator.html", "class_c_nagibator" ],
+    [ "CNeptune", "class_c_neptune.html", "class_c_neptune" ],
+    [ "CNon_Fixed_Model", "class_c_non___fixed___model.html", "class_c_non___fixed___model" ],
+    [ "CPatriot", "class_c_patriot.html", "class_c_patriot" ],
+    [ "CRecordGame", "class_c_record_game.html", "class_c_record_game" ],
+    [ "CRun", "class_c_run.html", "class_c_run" ],
+    [ "CStartGame", "class_c_start_game.html", "class_c_start_game" ],
+    [ "CTower", "class_c_tower.html", "class_c_tower" ],
+    [ "CViking", "class_c_viking.html", "class_c_viking" ],
+    [ "CWall", "class_c_wall.html", "class_c_wall" ],
+    [ "TCoordinates", "struct_t_coordinates.html", "struct_t_coordinates" ]
+];

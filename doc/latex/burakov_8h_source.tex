@@ -1,0 +1,31 @@
+\hypertarget{burakov_8h_source}{}\doxysection{burakov.\+h}
+\mbox{\hyperlink{burakov_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef BURAKOV\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define BURAKOV\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{towers_8h}{towers.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_burakov}{CBurakov}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_tower}{CTower}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15                                 \mbox{\hyperlink{class_c_burakov_ac8e4b802967a15a374a3014a5f98fee0}{CBurakov}}        ( \textcolor{keywordtype}{size\_t} attack\_num = 0 );}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_c_model}{CModel}}*                 \mbox{\hyperlink{class_c_burakov_abfb07f5cac25bdfb9767c69c0a926832}{clone}}           ( ) \textcolor{keyword}{const override};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{36         \textcolor{keywordtype}{bool}                    \mbox{\hyperlink{class_c_burakov_a9ee6d91b89ffbb4682ffca2aa0664aa6}{attack}}          ( \mbox{\hyperlink{class_c_map}{CMap}}\& mappy, \textcolor{keyword}{const} \mbox{\hyperlink{class_c_model}{CModel}}\& victim ) \textcolor{keyword}{override};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keyword}{private}:}
+\DoxyCodeLine{39         \textcolor{keywordtype}{size\_t}                  m\_Attack\_Number;}
+\DoxyCodeLine{40         \textcolor{keyword}{enum} Stats : \textcolor{keywordtype}{size\_t}}
+\DoxyCodeLine{41         \{}
+\DoxyCodeLine{42             BUR\_HP = 200,}
+\DoxyCodeLine{43             BUR\_DAM = 20,}
+\DoxyCodeLine{44             BUR\_RAN = 3}
+\DoxyCodeLine{45         \};}
+\DoxyCodeLine{46         \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t}     POWER = 1000;}
+\DoxyCodeLine{47         \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t}     ULTIMATE\_FREQ = 10;}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

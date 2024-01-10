@@ -1,0 +1,7 @@
+<map id="CNeptune" name="CNeptune">
+<area shape="rect" id="node1" title="Class that represents one type of tower." alt="" coords="53,247,140,273"/>
+<area shape="rect" id="node2" href="$class_c_tower.html" title="Class that represents all towers on the map." alt="" coords="62,171,131,197"/>
+<area shape="rect" id="node3" href="$class_c_non___fixed___model.html" title="Class that represents all non&#45;fixed models on the map." alt="" coords="24,95,169,121"/>
+<area shape="rect" id="node4" href="$class_c_model.html" title="Abstract class that represents all models on the map." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node5" href="$struct_t_coordinates.html" title="Struct that indicates the coordinates on the map." alt="" coords="101,5,207,32"/>
+</map>

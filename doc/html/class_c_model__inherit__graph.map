@@ -1,0 +1,20 @@
+<map id="CModel" name="CModel">
+<area shape="rect" id="node1" title="Abstract class that represents all models on the map." alt="" coords="281,5,351,32"/>
+<area shape="rect" id="node2" href="$class_c_fixed___model.html" title="Class that represents all fixed models on the map." alt="" coords="171,80,283,107"/>
+<area shape="rect" id="node7" href="$class_c_non___fixed___model.html" title="Class that represents all non&#45;fixed models on the map." alt="" coords="333,80,478,107"/>
+<area shape="rect" id="node3" href="$class_c_entrance.html" title="Class that represents entrance on the map." alt="" coords="5,155,93,181"/>
+<area shape="rect" id="node4" href="$class_c_exit.html" title="Class that represents exit on the map." alt="" coords="117,155,173,181"/>
+<area shape="rect" id="node5" href="$class_c_free.html" title="Class that represents free on the map." alt="" coords="197,155,256,181"/>
+<area shape="rect" id="node6" href="$class_c_wall.html" title="Class that represents wall on the map." alt="" coords="280,155,339,181"/>
+<area shape="rect" id="node8" href="$class_c_attacker.html" title="Class that represents all attackers on the map." alt="" coords="363,155,448,181"/>
+<area shape="rect" id="node14" href="$class_c_tower.html" title="Class that represents all towers on the map." alt="" coords="753,155,823,181"/>
+<area shape="rect" id="node9" href="$class_c_alexandr.html" title="Class that represents one type of attacking player." alt="" coords="121,229,210,256"/>
+<area shape="rect" id="node10" href="$class_c_freak.html" title="Class that represents one type of attacking player." alt="" coords="235,229,301,256"/>
+<area shape="rect" id="node11" href="$class_c_max.html" title="Class that represents one type of attacking player." alt="" coords="325,229,384,256"/>
+<area shape="rect" id="node12" href="$class_c_nagibator.html" title="Class that represents one type of attacking player." alt="" coords="409,229,503,256"/>
+<area shape="rect" id="node13" href="$class_c_viking.html" title="Class that represents one type of attacking player." alt="" coords="528,229,600,256"/>
+<area shape="rect" id="node15" href="$class_c_burakov.html" title="Class that represents one type of tower." alt="" coords="625,229,709,256"/>
+<area shape="rect" id="node16" href="$class_c_megadurum.html" title="Class that represents one type of tower." alt="" coords="733,229,843,256"/>
+<area shape="rect" id="node17" href="$class_c_neptune.html" title="Class that represents one type of tower." alt="" coords="867,229,954,256"/>
+<area shape="rect" id="node18" href="$class_c_patriot.html" title="Class that represents one type of tower." alt="" coords="978,229,1051,256"/>
+</map>

@@ -1,0 +1,32 @@
+\hypertarget{nagibator_8h_source}{}\doxysection{nagibator.\+h}
+\mbox{\hyperlink{nagibator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef NAGIBATOR\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define NAGIBATOR\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{attackers_8h}{attackers.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_nagibator}{CNagibator}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_attacker}{CAttacker}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15                                 \mbox{\hyperlink{class_c_nagibator_a2296d200d42cf8a75a209bfe453f675f}{CNagibator}}      ( \textcolor{keywordtype}{size\_t} attack\_num = 0 );}
+\DoxyCodeLine{21         \mbox{\hyperlink{class_c_model}{CModel}}*                 \mbox{\hyperlink{class_c_nagibator_ae4cbbafff898718909fab47cd32d08a6}{clone}}           ( ) \textcolor{keyword}{const override};}
+\DoxyCodeLine{22          }
+\DoxyCodeLine{35         \textcolor{keywordtype}{bool}                    \mbox{\hyperlink{class_c_nagibator_a98f96f57131cef8409bd05a1664c6c75}{get\_hit}}         ( \textcolor{keywordtype}{size\_t} damage ) \textcolor{keyword}{override};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keyword}{private}:}
+\DoxyCodeLine{38         \textcolor{keywordtype}{size\_t}                  m\_Attack\_Number;}
+\DoxyCodeLine{39         \textcolor{keyword}{enum} Stats : \textcolor{keywordtype}{size\_t}}
+\DoxyCodeLine{40         \{}
+\DoxyCodeLine{41             NAG\_HP = 500,}
+\DoxyCodeLine{42             NAG\_DAM = 50,}
+\DoxyCodeLine{43             NAG\_SPD = 1,}
+\DoxyCodeLine{44             NAG\_RAN = 1,}
+\DoxyCodeLine{45             NAG\_PRC = 50}
+\DoxyCodeLine{46         \};}
+\DoxyCodeLine{47         \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t}     DAM\_DIVIDER = 2;}
+\DoxyCodeLine{48         \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t}     ULTIMATE\_FREQ = 3;}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,110 @@
+\hypertarget{class_c_max}{}\doxysection{CMax Class Reference}
+\label{class_c_max}\index{CMax@{CMax}}
+
+
+Class that represents one type of attacking player.  
+
+
+
+
+{\ttfamily \#include $<$max.\+h$>$}
+
+
+
+Inheritance diagram for CMax\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_c_max__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CMax\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{class_c_max__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_max_afa31b0e0930dc698b7691c82d10a43d4}{CMax}} ()
+\item 
+\mbox{\hyperlink{class_c_model}{CModel}} $\ast$ \mbox{\hyperlink{class_c_max_a773a44e6c860cbd707183fc3624e966d}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em That method makes a copy of model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_max_a77f0f4cb4637db49a16f13393dbb2ec1}{make\+\_\+move}} (\mbox{\hyperlink{class_c_map}{CMap}} \&mappy) override
+\begin{DoxyCompactList}\small\item\em Method that moves attackers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents one type of attacking player. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_max_afa31b0e0930dc698b7691c82d10a43d4}\label{class_c_max_afa31b0e0930dc698b7691c82d10a43d4}} 
+\index{CMax@{CMax}!CMax@{CMax}}
+\index{CMax@{CMax}!CMax@{CMax}}
+\doxysubsubsection{\texorpdfstring{CMax()}{CMax()}}
+{\footnotesize\ttfamily CMax\+::\+CMax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_max_a773a44e6c860cbd707183fc3624e966d}\label{class_c_max_a773a44e6c860cbd707183fc3624e966d}} 
+\index{CMax@{CMax}!clone@{clone}}
+\index{clone@{clone}!CMax@{CMax}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ CMax\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method makes a copy of model. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on class \mbox{\hyperlink{class_c_model}{CModel}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_attacker_a00cc3eab5085f3cc6cacd851ebfb3fd8}{CAttacker}}.
+
+\mbox{\Hypertarget{class_c_max_a77f0f4cb4637db49a16f13393dbb2ec1}\label{class_c_max_a77f0f4cb4637db49a16f13393dbb2ec1}} 
+\index{CMax@{CMax}!make\_move@{make\_move}}
+\index{make\_move@{make\_move}!CMax@{CMax}}
+\doxysubsubsection{\texorpdfstring{make\_move()}{make\_move()}}
+{\footnotesize\ttfamily bool CMax\+::make\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{CMap}} \&}]{mappy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Method that moves attackers. 
+
+This attacker has bigger speed, so he has virtual method make\+\_\+move
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mappy} & map, on which attacker moves\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & FALSE if attacker didn\textquotesingle{}t reach the exit \\
+\hline
+{\em return} & TRUE if attacker reached the exit \\
+\hline
+\end{DoxyRetVals}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_attacker_ac3946c5644c0deeb5ddcce8b9bb4417d}{CAttacker}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{max_8h}{max.\+h}}\item 
+\mbox{\hyperlink{max_8cpp}{max.\+cpp}}\end{DoxyCompactItemize}

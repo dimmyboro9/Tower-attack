@@ -1,0 +1,15 @@
+
+At the begininnig of the game you will need to choose a map, 
+on which you want to play. Then you have to 
+buy attackers with the command b <sign> <num>:
+
+V - Viking HP: 300, Damage: 20, Speed: 1, Range: 1, Price: 20
+A - Alexandr HP: 150, Damage: 15, Speed: 1, Range: 2, Price: 10
+N - Nagibator HP: 500, Damage: 50, Speed: 1, Range: 1, Price: 50
+M - Max HP: 200, Damage: 10, Speed: 2, Range: 1, Price: 30
+F - Freak HP: 250 ( +10 ), Damage: 0 ( +5 ), Speed: 1, Range: 1, Price: 30
+
+After that, your only task will be to release attackers on the map in time
+with the command a <sign> <entry>
+
+To win, you need 5 of your attackers to reach the end

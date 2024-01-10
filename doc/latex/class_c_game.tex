@@ -1,0 +1,297 @@
+\hypertarget{class_c_game}{}\doxysection{CGame Class Reference}
+\label{class_c_game}\index{CGame@{CGame}}
+
+
+Abstract class that represents all ways to provide the game ( real step game or record )  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+
+
+Inheritance diagram for CGame\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_c_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CGame\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_c_game__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_game_afdcdb63f7baed19298a4432212918c5f}{CGame}} (size\+\_\+t score=0)
+\item 
+virtual \mbox{\hyperlink{class_c_game_a1c9a2b6e82099428e4cbc2791c293015}{$\sim$\+CGame}} () noexcept=default
+\item 
+virtual bool \mbox{\hyperlink{class_c_game_a3df7dce120921d2864f30c3b5b5daacd}{choose\+\_\+map}} ()=0
+\begin{DoxyCompactList}\small\item\em This method implements map choice. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_game_a502774dd7cd8d55afb347edfbbd79957}{buy\+\_\+units}} ()=0
+\begin{DoxyCompactList}\small\item\em This method implements buying attackers. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_game_a98999a3202f5b723746aacdb6985dbfe}{play}} ()=0
+\begin{DoxyCompactList}\small\item\em This method implements main engine of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_game_a4f39d2d3868e9641f3184e1f374f29f0}{show\+\_\+army}} () const
+\item 
+void \mbox{\hyperlink{class_c_game_aed87157585aa22dced8dab6feb115957}{make\+\_\+routes}} ()
+\item 
+void \mbox{\hyperlink{class_c_game_af1b6e415e8aea0c9ec3a07405d35f8da}{start\+\_\+game\+\_\+text}} () const
+\item 
+void \mbox{\hyperlink{class_c_game_a7398c85c122f1c267c89c28e770f8047}{enter\+\_\+the\+\_\+game}} ()
+\item 
+void \mbox{\hyperlink{class_c_game_a73564457815dcec284b6d19ff5a6ab97}{attack}} ()
+\item 
+void \mbox{\hyperlink{class_c_game_ac1d597259738603099d739461e520d80}{print\+\_\+all\+\_\+info}} (ostream \&os) const
+\item 
+void \mbox{\hyperlink{class_c_game_ae6bd6ea651d758fe7db165dc2553d0fc}{print\+\_\+tower\+\_\+info}} (ostream \&os) const
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_game_a3d5fff24d80c85b0898b59574a101a3b}{num\+\_\+of\+\_\+available}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{class_c_game_a2dd9be8992a837ca6fd926e85d76d6a9}{m\+\_\+\+Score}}
+\item 
+\mbox{\hyperlink{class_c_map}{CMap}} \mbox{\hyperlink{class_c_game_a314ca8d0bf4c4f629603efea0cdb6f26}{m\+\_\+\+Map}}
+\item 
+\mbox{\hyperlink{class_c_moves}{CMoves}} \mbox{\hyperlink{class_c_game_a335268415f5aff0e968ab47aa433405d}{m\+\_\+\+Moves}}
+\item 
+unordered\+\_\+map$<$ size\+\_\+t, list$<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} $>$ $>$ \mbox{\hyperlink{class_c_game_a229b592a5bebe5b3e4779af6a6fcdd8a}{m\+\_\+\+Routes}}
+\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_tower}{CTower}} $>$ $>$ \mbox{\hyperlink{class_c_game_a03f97892d5e034a19588a6ab9dcec34f}{m\+\_\+\+Towers}}
+\item 
+vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_attacker}{CAttacker}} $>$ $>$ \mbox{\hyperlink{class_c_game_a6a56cc3d0c0f1d2676a5c7db86e21ebc}{m\+\_\+\+Attackers}}
+\item 
+unordered\+\_\+map$<$ string, size\+\_\+t $>$ \mbox{\hyperlink{class_c_game_a637853c39767269f09ba3f16ad04a837}{m\+\_\+\+Available\+\_\+\+Att}}
+\item 
+unordered\+\_\+map$<$ size\+\_\+t, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_attacker}{CAttacker}} $>$ $>$ \mbox{\hyperlink{class_c_game_a334c39ac851525ba4a26ade63fd2a114}{m\+\_\+\+Wait}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \mbox{\hyperlink{class_c_game_aab7152e30fb44b0d0af1fe10add2fc94}{m\+\_\+\+Win\+\_\+\+Score}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class that represents all ways to provide the game ( real step game or record ) 
+
+It has\+: m\+\_\+\+Score -\/ number of attackers who reached the exit m\+\_\+\+Map -\/ map on which the game takes place m\+\_\+\+Moves -\/ all player\textquotesingle{}s actions m\+\_\+\+Routes -\/ paths that attackers walk m\+\_\+\+Towers -\/ towers in active game m\+\_\+\+Attackers -\/ attackers in active game m\+\_\+\+Available\+\_\+\+Att -\/ available attackers m\+\_\+\+Wait -\/ attackers\texorpdfstring{$<$}{<} who are waiting on enter the game ( not in m\+\_\+\+Attackers and not in m\+\_\+\+Available\+\_\+\+Att ) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_game_afdcdb63f7baed19298a4432212918c5f}\label{class_c_game_afdcdb63f7baed19298a4432212918c5f}} 
+\index{CGame@{CGame}!CGame@{CGame}}
+\index{CGame@{CGame}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{CGame()}{CGame()}}
+{\footnotesize\ttfamily CGame\+::\+CGame (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{score = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_a1c9a2b6e82099428e4cbc2791c293015}\label{class_c_game_a1c9a2b6e82099428e4cbc2791c293015}} 
+\index{CGame@{CGame}!````~CGame@{$\sim$CGame}}
+\index{````~CGame@{$\sim$CGame}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{$\sim$CGame()}{~CGame()}}
+{\footnotesize\ttfamily virtual CGame\+::$\sim$\+CGame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_game_a73564457815dcec284b6d19ff5a6ab97}\label{class_c_game_a73564457815dcec284b6d19ff5a6ab97}} 
+\index{CGame@{CGame}!attack@{attack}}
+\index{attack@{attack}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void CGame\+::attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a502774dd7cd8d55afb347edfbbd79957}\label{class_c_game_a502774dd7cd8d55afb347edfbbd79957}} 
+\index{CGame@{CGame}!buy\_units@{buy\_units}}
+\index{buy\_units@{buy\_units}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{buy\_units()}{buy\_units()}}
+{\footnotesize\ttfamily virtual bool CGame\+::buy\+\_\+units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method implements buying attackers. 
+
+There are some private methods that help this method ( entry treatment, different switches ... )
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this method is fully complited \\
+\hline
+{\em return} & FALSE if player decide to exit the game \\
+\hline
+\end{DoxyRetVals}
+
+
+Implemented in \mbox{\hyperlink{class_c_record_game_a7c49fe724cf95e0babea831e231da89f}{CRecord\+Game}}, and \mbox{\hyperlink{class_c_start_game_afbafe3b002908cb7ce5fa7293bac3022}{CStart\+Game}}.
+
+\mbox{\Hypertarget{class_c_game_a3df7dce120921d2864f30c3b5b5daacd}\label{class_c_game_a3df7dce120921d2864f30c3b5b5daacd}} 
+\index{CGame@{CGame}!choose\_map@{choose\_map}}
+\index{choose\_map@{choose\_map}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{choose\_map()}{choose\_map()}}
+{\footnotesize\ttfamily virtual bool CGame\+::choose\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method implements map choice. 
+
+There are some private methods that help this method ( entry treatment, different switches ... )
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this method is fully complited \\
+\hline
+{\em return} & FALSE if player decide to exit the game \\
+\hline
+\end{DoxyRetVals}
+
+
+Implemented in \mbox{\hyperlink{class_c_record_game_a4d0571b7d3b7884fdefc69f4dd6224ea}{CRecord\+Game}}, and \mbox{\hyperlink{class_c_start_game_a23cdd11665ee8b7b3412bced1da03e77}{CStart\+Game}}.
+
+\mbox{\Hypertarget{class_c_game_a7398c85c122f1c267c89c28e770f8047}\label{class_c_game_a7398c85c122f1c267c89c28e770f8047}} 
+\index{CGame@{CGame}!enter\_the\_game@{enter\_the\_game}}
+\index{enter\_the\_game@{enter\_the\_game}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{enter\_the\_game()}{enter\_the\_game()}}
+{\footnotesize\ttfamily void CGame\+::enter\+\_\+the\+\_\+game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_aed87157585aa22dced8dab6feb115957}\label{class_c_game_aed87157585aa22dced8dab6feb115957}} 
+\index{CGame@{CGame}!make\_routes@{make\_routes}}
+\index{make\_routes@{make\_routes}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{make\_routes()}{make\_routes()}}
+{\footnotesize\ttfamily void CGame\+::make\+\_\+routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a3d5fff24d80c85b0898b59574a101a3b}\label{class_c_game_a3d5fff24d80c85b0898b59574a101a3b}} 
+\index{CGame@{CGame}!num\_of\_available@{num\_of\_available}}
+\index{num\_of\_available@{num\_of\_available}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{num\_of\_available()}{num\_of\_available()}}
+{\footnotesize\ttfamily size\+\_\+t CGame\+::num\+\_\+of\+\_\+available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a98999a3202f5b723746aacdb6985dbfe}\label{class_c_game_a98999a3202f5b723746aacdb6985dbfe}} 
+\index{CGame@{CGame}!play@{play}}
+\index{play@{play}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual bool CGame\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This method implements main engine of the game. 
+
+It provides player moves, light AI, that puts towers, and simulation of the game process
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this method is fully complited \\
+\hline
+{\em return} & FALSE if player decide to exit the game \\
+\hline
+\end{DoxyRetVals}
+
+
+Implemented in \mbox{\hyperlink{class_c_record_game_a38e6b2ab5d09b18ee19f469190b8ecac}{CRecord\+Game}}, and \mbox{\hyperlink{class_c_start_game_a6281d6a64df2c5640bc8a54677c685ea}{CStart\+Game}}.
+
+\mbox{\Hypertarget{class_c_game_ac1d597259738603099d739461e520d80}\label{class_c_game_ac1d597259738603099d739461e520d80}} 
+\index{CGame@{CGame}!print\_all\_info@{print\_all\_info}}
+\index{print\_all\_info@{print\_all\_info}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{print\_all\_info()}{print\_all\_info()}}
+{\footnotesize\ttfamily void CGame\+::print\+\_\+all\+\_\+info (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_ae6bd6ea651d758fe7db165dc2553d0fc}\label{class_c_game_ae6bd6ea651d758fe7db165dc2553d0fc}} 
+\index{CGame@{CGame}!print\_tower\_info@{print\_tower\_info}}
+\index{print\_tower\_info@{print\_tower\_info}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{print\_tower\_info()}{print\_tower\_info()}}
+{\footnotesize\ttfamily void CGame\+::print\+\_\+tower\+\_\+info (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a4f39d2d3868e9641f3184e1f374f29f0}\label{class_c_game_a4f39d2d3868e9641f3184e1f374f29f0}} 
+\index{CGame@{CGame}!show\_army@{show\_army}}
+\index{show\_army@{show\_army}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{show\_army()}{show\_army()}}
+{\footnotesize\ttfamily void CGame\+::show\+\_\+army (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_af1b6e415e8aea0c9ec3a07405d35f8da}\label{class_c_game_af1b6e415e8aea0c9ec3a07405d35f8da}} 
+\index{CGame@{CGame}!start\_game\_text@{start\_game\_text}}
+\index{start\_game\_text@{start\_game\_text}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{start\_game\_text()}{start\_game\_text()}}
+{\footnotesize\ttfamily void CGame\+::start\+\_\+game\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_game_a6a56cc3d0c0f1d2676a5c7db86e21ebc}\label{class_c_game_a6a56cc3d0c0f1d2676a5c7db86e21ebc}} 
+\index{CGame@{CGame}!m\_Attackers@{m\_Attackers}}
+\index{m\_Attackers@{m\_Attackers}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{m\_Attackers}{m\_Attackers}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr $<$ \mbox{\hyperlink{class_c_attacker}{CAttacker}} $>$ $>$ CGame\+::m\+\_\+\+Attackers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a637853c39767269f09ba3f16ad04a837}\label{class_c_game_a637853c39767269f09ba3f16ad04a837}} 
+\index{CGame@{CGame}!m\_Available\_Att@{m\_Available\_Att}}
+\index{m\_Available\_Att@{m\_Available\_Att}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{m\_Available\_Att}{m\_Available\_Att}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ string, size\+\_\+t $>$ CGame\+::m\+\_\+\+Available\+\_\+\+Att\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a314ca8d0bf4c4f629603efea0cdb6f26}\label{class_c_game_a314ca8d0bf4c4f629603efea0cdb6f26}} 
+\index{CGame@{CGame}!m\_Map@{m\_Map}}
+\index{m\_Map@{m\_Map}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{m\_Map}{m\_Map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_map}{CMap}} CGame\+::m\+\_\+\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a335268415f5aff0e968ab47aa433405d}\label{class_c_game_a335268415f5aff0e968ab47aa433405d}} 
+\index{CGame@{CGame}!m\_Moves@{m\_Moves}}
+\index{m\_Moves@{m\_Moves}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{m\_Moves}{m\_Moves}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_moves}{CMoves}} CGame\+::m\+\_\+\+Moves\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a229b592a5bebe5b3e4779af6a6fcdd8a}\label{class_c_game_a229b592a5bebe5b3e4779af6a6fcdd8a}} 
+\index{CGame@{CGame}!m\_Routes@{m\_Routes}}
+\index{m\_Routes@{m\_Routes}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{m\_Routes}{m\_Routes}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ size\+\_\+t, list $<$ \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} $>$ $>$ CGame\+::m\+\_\+\+Routes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a2dd9be8992a837ca6fd926e85d76d6a9}\label{class_c_game_a2dd9be8992a837ca6fd926e85d76d6a9}} 
+\index{CGame@{CGame}!m\_Score@{m\_Score}}
+\index{m\_Score@{m\_Score}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{m\_Score}{m\_Score}}
+{\footnotesize\ttfamily size\+\_\+t CGame\+::m\+\_\+\+Score\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a03f97892d5e034a19588a6ab9dcec34f}\label{class_c_game_a03f97892d5e034a19588a6ab9dcec34f}} 
+\index{CGame@{CGame}!m\_Towers@{m\_Towers}}
+\index{m\_Towers@{m\_Towers}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{m\_Towers}{m\_Towers}}
+{\footnotesize\ttfamily vector$<$ shared\+\_\+ptr $<$ \mbox{\hyperlink{class_c_tower}{CTower}} $>$ $>$ CGame\+::m\+\_\+\+Towers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_a334c39ac851525ba4a26ade63fd2a114}\label{class_c_game_a334c39ac851525ba4a26ade63fd2a114}} 
+\index{CGame@{CGame}!m\_Wait@{m\_Wait}}
+\index{m\_Wait@{m\_Wait}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{m\_Wait}{m\_Wait}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ size\+\_\+t, shared\+\_\+ptr $<$ \mbox{\hyperlink{class_c_attacker}{CAttacker}} $>$ $>$ CGame\+::m\+\_\+\+Wait\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_aab7152e30fb44b0d0af1fe10add2fc94}\label{class_c_game_aab7152e30fb44b0d0af1fe10add2fc94}} 
+\index{CGame@{CGame}!m\_Win\_Score@{m\_Win\_Score}}
+\index{m\_Win\_Score@{m\_Win\_Score}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{m\_Win\_Score}{m\_Win\_Score}}
+{\footnotesize\ttfamily const size\+\_\+t CGame\+::m\+\_\+\+Win\+\_\+\+Score = 5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{game_8h}{game.\+h}}\item 
+\mbox{\hyperlink{game_8cpp}{game.\+cpp}}\end{DoxyCompactItemize}

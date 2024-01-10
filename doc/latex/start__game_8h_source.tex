@@ -1,0 +1,50 @@
+\hypertarget{start__game_8h_source}{}\doxysection{start\+\_\+game.\+h}
+\mbox{\hyperlink{start__game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef START\_GAME\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define START\_GAME\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{game_8h}{game.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_start_game}{CStartGame}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_game}{CGame}} }
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15                                 \mbox{\hyperlink{class_c_start_game_af7e38abf79b585377c5f21f8a3f85858}{CStartGame}}          ( ) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{16         }
+\DoxyCodeLine{27         \textcolor{keywordtype}{bool}                    \mbox{\hyperlink{class_c_start_game_a23cdd11665ee8b7b3412bced1da03e77}{choose\_map}}          ( ) \textcolor{keyword}{override};}
+\DoxyCodeLine{28         }
+\DoxyCodeLine{39         \textcolor{keywordtype}{bool}                    \mbox{\hyperlink{class_c_start_game_afbafe3b002908cb7ce5fa7293bac3022}{buy\_units}}           ( ) \textcolor{keyword}{override};}
+\DoxyCodeLine{40         }
+\DoxyCodeLine{51         \textcolor{keywordtype}{bool}                    \mbox{\hyperlink{class_c_start_game_a6281d6a64df2c5640bc8a54677c685ea}{play}}                ( ) \textcolor{keyword}{override};}
+\DoxyCodeLine{52     \textcolor{keyword}{private}:}
+\DoxyCodeLine{53         \textcolor{keywordtype}{char}                    m\_Option;}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         \textcolor{keywordtype}{void}                    text\_4\_cm           ( \mbox{\hyperlink{class_c_map}{CMap}}\& show\_map, \textcolor{keywordtype}{size\_t} my\_map ) \textcolor{keyword}{const};}
+\DoxyCodeLine{56         \textcolor{keywordtype}{bool}                    map\_menu            ( \textcolor{keywordtype}{size\_t}\& my\_map, \textcolor{keywordtype}{bool}\& is\_confirmed );}
+\DoxyCodeLine{57         \textcolor{keywordtype}{void}                    text\_4\_by           ( ) \textcolor{keyword}{const};}
+\DoxyCodeLine{58         \textcolor{keywordtype}{bool}                    purchase\_menu       ( \textcolor{keywordtype}{bool}\& is\_ready );}
+\DoxyCodeLine{59         \textcolor{keywordtype}{bool}                    make\_transaction    ( );}
+\DoxyCodeLine{60         \textcolor{keywordtype}{void}                    transaction\_switch  ( \textcolor{keywordtype}{char} sign, \textcolor{keywordtype}{int} num );}
+\DoxyCodeLine{61         \textcolor{keywordtype}{void}                    add\_2\_game          ( \mbox{\hyperlink{class_c_attacker}{CAttacker}} \&\& attacker, \textcolor{keywordtype}{size\_t} num, \textcolor{keywordtype}{char} sign );}
+\DoxyCodeLine{62         \textcolor{keywordtype}{void}                    add\_random\_towers   ( );}
+\DoxyCodeLine{63         shared\_ptr < CTower >   towers\_switch       ( \textcolor{keywordtype}{size\_t} num ) \textcolor{keyword}{const};}
+\DoxyCodeLine{64         \textcolor{keywordtype}{void}                    add\_tower\_2\_moves   ( \textcolor{keywordtype}{char} sign, \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} location );}
+\DoxyCodeLine{65         \textcolor{keywordtype}{bool}                    play\_menu           ( \textcolor{keywordtype}{bool}\& is\_over );}
+\DoxyCodeLine{66         \textcolor{keywordtype}{bool}                    choose\_unit         ( );}
+\DoxyCodeLine{67         \textcolor{keywordtype}{void}                    unit\_switch         ( \textcolor{keywordtype}{char} sign, \textcolor{keywordtype}{size\_t} num );}
+\DoxyCodeLine{68         \textcolor{keywordtype}{void}                    add\_att\_to\_map      ( \textcolor{keyword}{const} shared\_ptr < CAttacker >\& attacker, \textcolor{keywordtype}{size\_t} entry, \textcolor{keywordtype}{char} sign );}
+\DoxyCodeLine{69         \textcolor{keywordtype}{bool}                    simulation          ( );}
+\DoxyCodeLine{70         \textcolor{keywordtype}{void}                    add\_towers          ( );}
+\DoxyCodeLine{71         pair < string, string > analyze\_attack      ( ) \textcolor{keyword}{const};}
+\DoxyCodeLine{72         \textcolor{keywordtype}{string}                  find\_max            ( \textcolor{keyword}{const} unordered\_map < string, size\_t >\& attackers ) \textcolor{keyword}{const};}
+\DoxyCodeLine{73         \textcolor{keywordtype}{void}                    nag\_alex\_defense    ( list < TCoordinates >::iterator iter );}
+\DoxyCodeLine{74         \textcolor{keywordtype}{void}                    max\_defense         ( );}
+\DoxyCodeLine{75         \textcolor{keywordtype}{void}                    def\_with\_patriot    ( list < TCoordinates >::iterator iter );}
+\DoxyCodeLine{76         \textcolor{keywordtype}{void}                    classic\_defense     ( list < TCoordinates >::iterator iter );}
+\DoxyCodeLine{77         \textcolor{keywordtype}{bool}                    make\_move           ( );}
+\DoxyCodeLine{78         \textcolor{keywordtype}{void}                    save\_game           ( );}
+\DoxyCodeLine{79         \textcolor{keywordtype}{void}                    save\_game\_name      ( \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& name ) \textcolor{keyword}{const};}
+\DoxyCodeLine{80 \};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#endif }}
+
+\end{DoxyCode}

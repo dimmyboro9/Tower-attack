@@ -1,0 +1,179 @@
+\hypertarget{class_c_moves}{}\doxysection{CMoves Class Reference}
+\label{class_c_moves}\index{CMoves@{CMoves}}
+
+
+Class that keeps all player\textquotesingle{}s and computer\textquotesingle{}s actions during the game.  
+
+
+
+
+{\ttfamily \#include $<$moves.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_moves_a348c208c7ec83ee365cabf7d0147b418}{CMoves}} ()=default
+\item 
+void \mbox{\hyperlink{class_c_moves_af8079caa72ca218c4678589527799849}{add\+\_\+map\+\_\+number}} (size\+\_\+t map\+\_\+number)
+\begin{DoxyCompactList}\small\item\em This method add map number chosen by player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_moves_a3ea6eb3472338181394fff8793370696}{add\+\_\+attacker}} (char sign, size\+\_\+t num)
+\begin{DoxyCompactList}\small\item\em This method add attacker bought by player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_moves_a0404d9e9de35998ec38987df06258b8b}{add\+\_\+game\+\_\+move}} (size\+\_\+t game\+\_\+move)
+\begin{DoxyCompactList}\small\item\em This method add attackers and towers, that was added to the map, and their locations to the class. Also it adds information about when the player simulated the game. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_c_moves_a7dab61d8ca3bab7987425f92d45df311}{get\+\_\+map\+\_\+number}} () const
+\begin{DoxyCompactList}\small\item\em Return map number chosen by player. \end{DoxyCompactList}\item 
+unordered\+\_\+map$<$ char, size\+\_\+t $>$ \mbox{\hyperlink{class_c_moves_a9cd4bdd7be2f5a70eeacb8c96f4c4529}{get\+\_\+attackers}} () const
+\begin{DoxyCompactList}\small\item\em Return all attackers that was bought by player. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_c_moves_ade705a82b36237a73795914d0127564c}{get\+\_\+game\+\_\+move}} ()
+\begin{DoxyCompactList}\small\item\em Return game moves in right order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_moves_a058ac6df1e59d9563a61b01262725e08}{write\+\_\+to\+\_\+file}} (ostream \&file)
+\begin{DoxyCompactList}\small\item\em This method writes noves to the file to keep record. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_moves_a00bf668c9cac79c052d6fbf3ab8da7b6}{write\+\_\+from\+\_\+file}} (istream \&file)
+\begin{DoxyCompactList}\small\item\em This method writes moves from the file to get as a record. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that keeps all player\textquotesingle{}s and computer\textquotesingle{}s actions during the game. 
+
+It has\+: m\+\_\+\+Map\+\_\+\+Number -\/ number of chosen map m\+\_\+\+Attackers -\/ all attackers bought by the player m\+\_\+\+Game\+\_\+\+Moves -\/ all additions of attackers and towers to the game and simulation starts 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_moves_a348c208c7ec83ee365cabf7d0147b418}\label{class_c_moves_a348c208c7ec83ee365cabf7d0147b418}} 
+\index{CMoves@{CMoves}!CMoves@{CMoves}}
+\index{CMoves@{CMoves}!CMoves@{CMoves}}
+\doxysubsubsection{\texorpdfstring{CMoves()}{CMoves()}}
+{\footnotesize\ttfamily CMoves\+::\+CMoves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_moves_a3ea6eb3472338181394fff8793370696}\label{class_c_moves_a3ea6eb3472338181394fff8793370696}} 
+\index{CMoves@{CMoves}!add\_attacker@{add\_attacker}}
+\index{add\_attacker@{add\_attacker}!CMoves@{CMoves}}
+\doxysubsubsection{\texorpdfstring{add\_attacker()}{add\_attacker()}}
+{\footnotesize\ttfamily void CMoves\+::add\+\_\+attacker (\begin{DoxyParamCaption}\item[{char}]{sign,  }\item[{size\+\_\+t}]{num }\end{DoxyParamCaption})}
+
+
+
+This method add attacker bought by player. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sign} & attacker\textquotesingle{}s sign on the map \\
+\hline
+\mbox{\texttt{ in}}  & {\em num} & how many attackers were bought \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_moves_a0404d9e9de35998ec38987df06258b8b}\label{class_c_moves_a0404d9e9de35998ec38987df06258b8b}} 
+\index{CMoves@{CMoves}!add\_game\_move@{add\_game\_move}}
+\index{add\_game\_move@{add\_game\_move}!CMoves@{CMoves}}
+\doxysubsubsection{\texorpdfstring{add\_game\_move()}{add\_game\_move()}}
+{\footnotesize\ttfamily void CMoves\+::add\+\_\+game\+\_\+move (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{game\+\_\+move }\end{DoxyParamCaption})}
+
+
+
+This method add attackers and towers, that was added to the map, and their locations to the class. Also it adds information about when the player simulated the game. 
+
+all signs and numbers are saved in size\+\_\+t
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em game\+\_\+move} & number of the map chosen by player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_moves_af8079caa72ca218c4678589527799849}\label{class_c_moves_af8079caa72ca218c4678589527799849}} 
+\index{CMoves@{CMoves}!add\_map\_number@{add\_map\_number}}
+\index{add\_map\_number@{add\_map\_number}!CMoves@{CMoves}}
+\doxysubsubsection{\texorpdfstring{add\_map\_number()}{add\_map\_number()}}
+{\footnotesize\ttfamily void CMoves\+::add\+\_\+map\+\_\+number (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{map\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+This method add map number chosen by player. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em map\+\_\+number} & number of the map chosen by player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_moves_a9cd4bdd7be2f5a70eeacb8c96f4c4529}\label{class_c_moves_a9cd4bdd7be2f5a70eeacb8c96f4c4529}} 
+\index{CMoves@{CMoves}!get\_attackers@{get\_attackers}}
+\index{get\_attackers@{get\_attackers}!CMoves@{CMoves}}
+\doxysubsubsection{\texorpdfstring{get\_attackers()}{get\_attackers()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ char, size\+\_\+t $>$ CMoves\+::get\+\_\+attackers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return all attackers that was bought by player. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em unordered\+\_\+map} & \texorpdfstring{$<$}{<} char, size\+\_\+t \texorpdfstring{$>$}{>} -\/ map of attacker\textquotesingle{}s sign and amount of this type of attacker \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_moves_ade705a82b36237a73795914d0127564c}\label{class_c_moves_ade705a82b36237a73795914d0127564c}} 
+\index{CMoves@{CMoves}!get\_game\_move@{get\_game\_move}}
+\index{get\_game\_move@{get\_game\_move}!CMoves@{CMoves}}
+\doxysubsubsection{\texorpdfstring{get\_game\_move()}{get\_game\_move()}}
+{\footnotesize\ttfamily size\+\_\+t CMoves\+::get\+\_\+game\+\_\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return game moves in right order. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em size\+\_\+t} & -\/ game move in size\+\_\+t \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_moves_a7dab61d8ca3bab7987425f92d45df311}\label{class_c_moves_a7dab61d8ca3bab7987425f92d45df311}} 
+\index{CMoves@{CMoves}!get\_map\_number@{get\_map\_number}}
+\index{get\_map\_number@{get\_map\_number}!CMoves@{CMoves}}
+\doxysubsubsection{\texorpdfstring{get\_map\_number()}{get\_map\_number()}}
+{\footnotesize\ttfamily size\+\_\+t CMoves\+::get\+\_\+map\+\_\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return map number chosen by player. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em size\+\_\+t} & -\/ map number \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_moves_a00bf668c9cac79c052d6fbf3ab8da7b6}\label{class_c_moves_a00bf668c9cac79c052d6fbf3ab8da7b6}} 
+\index{CMoves@{CMoves}!write\_from\_file@{write\_from\_file}}
+\index{write\_from\_file@{write\_from\_file}!CMoves@{CMoves}}
+\doxysubsubsection{\texorpdfstring{write\_from\_file()}{write\_from\_file()}}
+{\footnotesize\ttfamily void CMoves\+::write\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{istream \&}]{file }\end{DoxyParamCaption})}
+
+
+
+This method writes moves from the file to get as a record. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & file, from where the moves will be written \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_moves_a058ac6df1e59d9563a61b01262725e08}\label{class_c_moves_a058ac6df1e59d9563a61b01262725e08}} 
+\index{CMoves@{CMoves}!write\_to\_file@{write\_to\_file}}
+\index{write\_to\_file@{write\_to\_file}!CMoves@{CMoves}}
+\doxysubsubsection{\texorpdfstring{write\_to\_file()}{write\_to\_file()}}
+{\footnotesize\ttfamily void CMoves\+::write\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{ostream \&}]{file }\end{DoxyParamCaption})}
+
+
+
+This method writes noves to the file to keep record. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & file, where the moves will be written \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{moves_8h}{moves.\+h}}\item 
+\mbox{\hyperlink{moves_8cpp}{moves.\+cpp}}\end{DoxyCompactItemize}

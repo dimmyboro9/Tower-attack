@@ -1,0 +1,31 @@
+\hypertarget{freak_8h_source}{}\doxysection{freak.\+h}
+\mbox{\hyperlink{freak_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef FREAK\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define FREAK\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{attackers_8h}{attackers.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_freak}{CFreak}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_attacker}{CAttacker}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \textcolor{keyword}{public}:}
+\DoxyCodeLine{12                                 \mbox{\hyperlink{class_c_freak_a73c8fa96b9a44debbabeff18c391d246}{CFreak}}          ( );}
+\DoxyCodeLine{18         \mbox{\hyperlink{class_c_model}{CModel}}*                 \mbox{\hyperlink{class_c_freak_a7a52614f4681ed4ca7995db15fe4aada}{clone}}           ( ) \textcolor{keyword}{const override};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{32         \textcolor{keywordtype}{bool}                    \mbox{\hyperlink{class_c_freak_acf5dd28db4f50a5c615b53bb69bff10c}{get\_hit}}         ( \textcolor{keywordtype}{size\_t} damage ) \textcolor{keyword}{override};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keyword}{private}:}
+\DoxyCodeLine{35         \textcolor{keyword}{enum} Stats : \textcolor{keywordtype}{size\_t}}
+\DoxyCodeLine{36         \{}
+\DoxyCodeLine{37             FRK\_HP = 250,}
+\DoxyCodeLine{38             FRK\_DAM = 0,}
+\DoxyCodeLine{39             FRK\_SPD = 1,}
+\DoxyCodeLine{40             FRK\_RAN = 1,}
+\DoxyCodeLine{41             FRK\_PRC = 30,}
+\DoxyCodeLine{42         \};}
+\DoxyCodeLine{43         \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t}     HEAL = 10;}
+\DoxyCodeLine{44         \textcolor{keyword}{const} \textcolor{keyword}{static} \textcolor{keywordtype}{size\_t}     POWER = 5;}
+\DoxyCodeLine{45 \};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

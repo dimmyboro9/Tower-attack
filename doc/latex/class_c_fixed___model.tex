@@ -1,0 +1,221 @@
+\hypertarget{class_c_fixed___model}{}\doxysection{CFixed\+\_\+\+Model Class Reference}
+\label{class_c_fixed___model}\index{CFixed\_Model@{CFixed\_Model}}
+
+
+Class that represents all fixed models on the map.  
+
+
+
+
+{\ttfamily \#include $<$fixed\+\_\+model.\+h$>$}
+
+
+
+Inheritance diagram for CFixed\+\_\+\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_c_fixed___model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CFixed\+\_\+\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_c_fixed___model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_fixed___model_adbe607aa90528a5d182bfee616cbc347}{CFixed\+\_\+\+Model}} (const string \&\mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}}, char \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}})
+\item 
+virtual \mbox{\hyperlink{class_c_fixed___model_ac68dc0ffefa387d02fda908af77fd8b7}{$\sim$\+CFixed\+\_\+\+Model}} () noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ \mbox{\hyperlink{class_c_fixed___model_a09d3a8bddef12a123cd274889c3d4c08}{clone}} () const override=0
+\begin{DoxyCompactList}\small\item\em That method makes a copy of model. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_fixed___model_a5ca6cf46abb69d92d03718a74718e6e4}{get\+\_\+hit}} (size\+\_\+t damage) override
+\begin{DoxyCompactList}\small\item\em That method implements taking damage. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_fixed___model_a78f19de6b3d7dace4b1e7067f940b7c3}{attack}} (\mbox{\hyperlink{class_c_map}{CMap}} \&mappy, const \mbox{\hyperlink{class_c_model}{CModel}} \&victim) override
+\begin{DoxyCompactList}\small\item\em That method implements attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_fixed___model_a8ae1f29666b8ccf0d99afaba081693e0}{add\+\_\+location}} (const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&coordinates) override
+\begin{DoxyCompactList}\small\item\em That method implements adding location to model\textquotesingle{}s atributes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_fixed___model_ab3200182173bf28405354214169bf55e}{decrease\+\_\+damage}} (size\+\_\+t divider) override
+\begin{DoxyCompactList}\small\item\em That method implements decreasing damage. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_fixed___model_aa433c86597b778f6ba82ef5cfe78e3fd}{is\+\_\+dead}} () const override
+\begin{DoxyCompactList}\small\item\em Method that finds out if attacker is dead ( tower is destroyed ) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents all fixed models on the map. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_fixed___model_adbe607aa90528a5d182bfee616cbc347}\label{class_c_fixed___model_adbe607aa90528a5d182bfee616cbc347}} 
+\index{CFixed\_Model@{CFixed\_Model}!CFixed\_Model@{CFixed\_Model}}
+\index{CFixed\_Model@{CFixed\_Model}!CFixed\_Model@{CFixed\_Model}}
+\doxysubsubsection{\texorpdfstring{CFixed\_Model()}{CFixed\_Model()}}
+{\footnotesize\ttfamily CFixed\+\_\+\+Model\+::\+CFixed\+\_\+\+Model (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{char}]{sign }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_fixed___model_ac68dc0ffefa387d02fda908af77fd8b7}\label{class_c_fixed___model_ac68dc0ffefa387d02fda908af77fd8b7}} 
+\index{CFixed\_Model@{CFixed\_Model}!````~CFixed\_Model@{$\sim$CFixed\_Model}}
+\index{````~CFixed\_Model@{$\sim$CFixed\_Model}!CFixed\_Model@{CFixed\_Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$CFixed\_Model()}{~CFixed\_Model()}}
+{\footnotesize\ttfamily virtual CFixed\+\_\+\+Model\+::$\sim$\+CFixed\+\_\+\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_fixed___model_a8ae1f29666b8ccf0d99afaba081693e0}\label{class_c_fixed___model_a8ae1f29666b8ccf0d99afaba081693e0}} 
+\index{CFixed\_Model@{CFixed\_Model}!add\_location@{add\_location}}
+\index{add\_location@{add\_location}!CFixed\_Model@{CFixed\_Model}}
+\doxysubsubsection{\texorpdfstring{add\_location()}{add\_location()}}
+{\footnotesize\ttfamily void CFixed\+\_\+\+Model\+::add\+\_\+location (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method implements adding location to model\textquotesingle{}s atributes. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em coordinates} & location coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_model_a3112a99092a0b109a7d42d741f4b5777}{CModel}}.
+
+\mbox{\Hypertarget{class_c_fixed___model_a78f19de6b3d7dace4b1e7067f940b7c3}\label{class_c_fixed___model_a78f19de6b3d7dace4b1e7067f940b7c3}} 
+\index{CFixed\_Model@{CFixed\_Model}!attack@{attack}}
+\index{attack@{attack}!CFixed\_Model@{CFixed\_Model}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily bool CFixed\+\_\+\+Model\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{CMap}} \&}]{mappy,  }\item[{const \mbox{\hyperlink{class_c_model}{CModel}} \&}]{victim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method implements attack. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mappy} & map on which model is located to find all his neighbours \\
+\hline
+\mbox{\texttt{ in}}  & {\em victim} & type of victim, that it attacks\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if model has more than 0 HP \\
+\hline
+{\em return} & FALSE if model has 0 HP \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_model_a96771c25866b5b4a09f0f568c20a70d5}{CModel}}.
+
+\mbox{\Hypertarget{class_c_fixed___model_a09d3a8bddef12a123cd274889c3d4c08}\label{class_c_fixed___model_a09d3a8bddef12a123cd274889c3d4c08}} 
+\index{CFixed\_Model@{CFixed\_Model}!clone@{clone}}
+\index{clone@{clone}!CFixed\_Model@{CFixed\_Model}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ CFixed\+\_\+\+Model\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+That method makes a copy of model. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on class \mbox{\hyperlink{class_c_model}{CModel}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_c_model_a51dadfa9bc1ffe5b628bbeb5309150f0}{CModel}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_c_entrance_a6b940af97a60cce6e6f692f1d93e8f2d}{CEntrance}}, \mbox{\hyperlink{class_c_exit_a369e205f6af1139469b467e299b6ec83}{CExit}}, \mbox{\hyperlink{class_c_free_a6707601bbbb6bc3576861840a6a4177a}{CFree}}, and \mbox{\hyperlink{class_c_wall_ae05d3d4ab3f9e7fa5f5bca0ab7d92c23}{CWall}}.
+
+\mbox{\Hypertarget{class_c_fixed___model_ab3200182173bf28405354214169bf55e}\label{class_c_fixed___model_ab3200182173bf28405354214169bf55e}} 
+\index{CFixed\_Model@{CFixed\_Model}!decrease\_damage@{decrease\_damage}}
+\index{decrease\_damage@{decrease\_damage}!CFixed\_Model@{CFixed\_Model}}
+\doxysubsubsection{\texorpdfstring{decrease\_damage()}{decrease\_damage()}}
+{\footnotesize\ttfamily void CFixed\+\_\+\+Model\+::decrease\+\_\+damage (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{divider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method implements decreasing damage. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em divider} & how much to reduce damage \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_model_a6451c81a3e011d24c999b307a0ea51e9}{CModel}}.
+
+\mbox{\Hypertarget{class_c_fixed___model_a5ca6cf46abb69d92d03718a74718e6e4}\label{class_c_fixed___model_a5ca6cf46abb69d92d03718a74718e6e4}} 
+\index{CFixed\_Model@{CFixed\_Model}!get\_hit@{get\_hit}}
+\index{get\_hit@{get\_hit}!CFixed\_Model@{CFixed\_Model}}
+\doxysubsubsection{\texorpdfstring{get\_hit()}{get\_hit()}}
+{\footnotesize\ttfamily bool CFixed\+\_\+\+Model\+::get\+\_\+hit (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+That method implements taking damage. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em damage} & The amount of damage the model receives\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if victim has more than 0 HP \\
+\hline
+{\em return} & FALSE if victim has 0 HP \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_model_a26534753e68e505c722f8f3c3c54a126}{CModel}}.
+
+\mbox{\Hypertarget{class_c_fixed___model_aa433c86597b778f6ba82ef5cfe78e3fd}\label{class_c_fixed___model_aa433c86597b778f6ba82ef5cfe78e3fd}} 
+\index{CFixed\_Model@{CFixed\_Model}!is\_dead@{is\_dead}}
+\index{is\_dead@{is\_dead}!CFixed\_Model@{CFixed\_Model}}
+\doxysubsubsection{\texorpdfstring{is\_dead()}{is\_dead()}}
+{\footnotesize\ttfamily bool CFixed\+\_\+\+Model\+::is\+\_\+dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Method that finds out if attacker is dead ( tower is destroyed ) 
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & FALSE if model has more than 0 HP \\
+\hline
+{\em return} & TRUE if model has 0 HP \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_model_a664cd2cd7217f8c7b15432498b2dfa77}{CModel}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fixed__model_8h}{fixed\+\_\+model.\+h}}\item 
+\mbox{\hyperlink{fixed__model_8cpp}{fixed\+\_\+model.\+cpp}}\end{DoxyCompactItemize}

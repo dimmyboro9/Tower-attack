@@ -1,0 +1,55 @@
+\hypertarget{game_8h_source}{}\doxysection{game.\+h}
+\mbox{\hyperlink{game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GAME\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GAME\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{coordinates_8h}{coordinates.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{neptune_8h}{neptune.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{viking_8h}{viking.h}}"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{map_8h}{map.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{moves_8h}{moves.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{write_8h}{write.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{exit__game_8h}{exit\_game.h}}"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{game_8h_a7dddd06079e66834ba82889f32e25c0a}{TOW\_TO\_ATT}} = 5;}
+\DoxyCodeLine{12 \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{game_8h_a5104c91ba629d318cdd44434fb42322e}{PLACE\_RADIUS}} = 4;}
+\DoxyCodeLine{13 \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{game_8h_aece63c2ddcc516332a3ac18a4723fa0d}{NAG\_ALEX\_DEF}} = 3;}
+\DoxyCodeLine{14 \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{game_8h_a9128437fc086c0c027750180dea0d859}{VIK\_ALEX\_DEF}} = 2;}
+\DoxyCodeLine{15 \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{game_8h_ad440d8b100607dd3864cc005f939f7f0}{MAX\_DEF}} = 2;}
+\DoxyCodeLine{16 \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{game_8h_af45b194c86bbe512f44540af87a9333b}{DEF\_WITH\_PATRIOT}} = 2;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{33 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_game}{CGame}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35     \textcolor{keyword}{public}:}
+\DoxyCodeLine{36                                                             \mbox{\hyperlink{class_c_game_afdcdb63f7baed19298a4432212918c5f}{CGame}}               ( \textcolor{keywordtype}{size\_t} score = 0 );}
+\DoxyCodeLine{37         \textcolor{keyword}{virtual}                                             \mbox{\hyperlink{class_c_game_a1c9a2b6e82099428e4cbc2791c293015}{\string~CGame}}              ( ) noexcept = default;}
+\DoxyCodeLine{38         }
+\DoxyCodeLine{49         virtual \textcolor{keywordtype}{bool}                                        \mbox{\hyperlink{class_c_game_a3df7dce120921d2864f30c3b5b5daacd}{choose\_map}}          ( ) = 0;}
+\DoxyCodeLine{50         }
+\DoxyCodeLine{61         virtual \textcolor{keywordtype}{bool}                                        \mbox{\hyperlink{class_c_game_a502774dd7cd8d55afb347edfbbd79957}{buy\_units}}           ( ) = 0;}
+\DoxyCodeLine{62         }
+\DoxyCodeLine{73         virtual \textcolor{keywordtype}{bool}                                        \mbox{\hyperlink{class_c_game_a98999a3202f5b723746aacdb6985dbfe}{play}}                ( ) = 0;}
+\DoxyCodeLine{74     protected:      }
+\DoxyCodeLine{75         \textcolor{keywordtype}{size\_t}                                              \mbox{\hyperlink{class_c_game_a2dd9be8992a837ca6fd926e85d76d6a9}{m\_Score}};}
+\DoxyCodeLine{76         const static \textcolor{keywordtype}{size\_t}                                 \mbox{\hyperlink{class_c_game_aab7152e30fb44b0d0af1fe10add2fc94}{m\_Win\_Score}} = 5;}
+\DoxyCodeLine{77         \mbox{\hyperlink{class_c_map}{CMap}}                                                \mbox{\hyperlink{class_c_game_a314ca8d0bf4c4f629603efea0cdb6f26}{m\_Map}};}
+\DoxyCodeLine{78         \mbox{\hyperlink{class_c_moves}{CMoves}}                                              \mbox{\hyperlink{class_c_game_a335268415f5aff0e968ab47aa433405d}{m\_Moves}};}
+\DoxyCodeLine{79         unordered\_map < \textcolor{keywordtype}{size\_t}, list < \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} > >     \mbox{\hyperlink{class_c_game_a229b592a5bebe5b3e4779af6a6fcdd8a}{m\_Routes}};}
+\DoxyCodeLine{80         vector < shared\_ptr < \mbox{\hyperlink{class_c_tower}{CTower}} > >                    \mbox{\hyperlink{class_c_game_a03f97892d5e034a19588a6ab9dcec34f}{m\_Towers}};}
+\DoxyCodeLine{81         vector < shared\_ptr < \mbox{\hyperlink{class_c_attacker}{CAttacker}} > >                 \mbox{\hyperlink{class_c_game_a6a56cc3d0c0f1d2676a5c7db86e21ebc}{m\_Attackers}};}
+\DoxyCodeLine{82         unordered\_map < \textcolor{keywordtype}{string}, \textcolor{keywordtype}{size\_t} >                    \mbox{\hyperlink{class_c_game_a637853c39767269f09ba3f16ad04a837}{m\_Available\_Att}};}
+\DoxyCodeLine{83         unordered\_map < \textcolor{keywordtype}{size\_t}, shared\_ptr < \mbox{\hyperlink{class_c_attacker}{CAttacker}} > >  \mbox{\hyperlink{class_c_game_a334c39ac851525ba4a26ade63fd2a114}{m\_Wait}};}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85         \textcolor{keywordtype}{void}                                                \mbox{\hyperlink{class_c_game_a4f39d2d3868e9641f3184e1f374f29f0}{show\_army}}           ( ) const;}
+\DoxyCodeLine{86         \textcolor{keywordtype}{void}                                                \mbox{\hyperlink{class_c_game_aed87157585aa22dced8dab6feb115957}{make\_routes}}         ( );}
+\DoxyCodeLine{87         \textcolor{keywordtype}{void}                                                \mbox{\hyperlink{class_c_game_af1b6e415e8aea0c9ec3a07405d35f8da}{start\_game\_text}}     ( ) const;}
+\DoxyCodeLine{88         \textcolor{keywordtype}{void}                                                \mbox{\hyperlink{class_c_game_a7398c85c122f1c267c89c28e770f8047}{enter\_the\_game}}      ( );}
+\DoxyCodeLine{89         \textcolor{keywordtype}{void}                                                \mbox{\hyperlink{class_c_game_a73564457815dcec284b6d19ff5a6ab97}{attack}}              ( );}
+\DoxyCodeLine{90         \textcolor{keywordtype}{void}                                                \mbox{\hyperlink{class_c_game_ac1d597259738603099d739461e520d80}{print\_all\_info}}      ( ostream\& os ) const;}
+\DoxyCodeLine{91         \textcolor{keywordtype}{void}                                                \mbox{\hyperlink{class_c_game_ae6bd6ea651d758fe7db165dc2553d0fc}{print\_tower\_info}}    ( ostream\& os ) const;}
+\DoxyCodeLine{92         \textcolor{keywordtype}{size\_t}                                              \mbox{\hyperlink{class_c_game_a3d5fff24d80c85b0898b59574a101a3b}{num\_of\_available}}    ( ) const;}
+\DoxyCodeLine{93 \};}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

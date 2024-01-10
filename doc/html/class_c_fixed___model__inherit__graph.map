@@ -1,0 +1,8 @@
+<map id="CFixed_Model" name="CFixed_Model">
+<area shape="rect" id="node1" title="Class that represents all fixed models on the map." alt="" coords="129,80,241,107"/>
+<area shape="rect" id="node3" href="$class_c_entrance.html" title="Class that represents entrance on the map." alt="" coords="5,155,93,181"/>
+<area shape="rect" id="node4" href="$class_c_exit.html" title="Class that represents exit on the map." alt="" coords="117,155,173,181"/>
+<area shape="rect" id="node5" href="$class_c_free.html" title="Class that represents free on the map." alt="" coords="197,155,256,181"/>
+<area shape="rect" id="node6" href="$class_c_wall.html" title="Class that represents wall on the map." alt="" coords="280,155,339,181"/>
+<area shape="rect" id="node2" href="$class_c_model.html" title="Abstract class that represents all models on the map." alt="" coords="150,5,221,32"/>
+</map>

@@ -1,0 +1,329 @@
+\hypertarget{class_c_model}{}\doxysection{CModel Class Reference}
+\label{class_c_model}\index{CModel@{CModel}}
+
+
+Abstract class that represents all models on the map.  
+
+
+
+
+{\ttfamily \#include $<$models.\+h$>$}
+
+
+
+Inheritance diagram for CModel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_model__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_model_ac7038923094553bd359adf3888207ef5}{CModel}} (const string \&\mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}}, const string \&\mbox{\hyperlink{class_c_model_a1385b01f10a0b3caf5e21c3a1af6769b}{type}}, char \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}})
+\item 
+virtual \mbox{\hyperlink{class_c_model_a8a587bcc0f8b3b08079ab087da831e47}{$\sim$\+CModel}} () noexcept=default
+\item 
+virtual \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ \mbox{\hyperlink{class_c_model_a51dadfa9bc1ffe5b628bbeb5309150f0}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em That method makes a copy of model. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_model_a26534753e68e505c722f8f3c3c54a126}{get\+\_\+hit}} (size\+\_\+t damage)=0
+\begin{DoxyCompactList}\small\item\em That method implements taking damage. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_model_a96771c25866b5b4a09f0f568c20a70d5}{attack}} (\mbox{\hyperlink{class_c_map}{CMap}} \&mappy, const \mbox{\hyperlink{class_c_model}{CModel}} \&victim)=0
+\begin{DoxyCompactList}\small\item\em That method implements attack. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_model_a3112a99092a0b109a7d42d741f4b5777}{add\+\_\+location}} (const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&coordinates)=0
+\begin{DoxyCompactList}\small\item\em That method implements adding location to model\textquotesingle{}s atributes. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_model_a6451c81a3e011d24c999b307a0ea51e9}{decrease\+\_\+damage}} (size\+\_\+t divider)=0
+\begin{DoxyCompactList}\small\item\em That method implements decreasing damage. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_model_a664cd2cd7217f8c7b15432498b2dfa77}{is\+\_\+dead}} () const =0
+\begin{DoxyCompactList}\small\item\em Method that finds out if attacker is dead ( tower is destroyed ) \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_model_a3be9ff4a2a4f04ef09f84f9b35baefba}{print}} (ostream \&os) const
+\begin{DoxyCompactList}\small\item\em That method prints model\textquotesingle{}s sign. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}{name}} () const
+\begin{DoxyCompactList}\small\item\em That method returns model\textquotesingle{}s name. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}{sign}} () const
+\begin{DoxyCompactList}\small\item\em That method returns model\textquotesingle{}s sign. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_c_model_a1385b01f10a0b3caf5e21c3a1af6769b}{type}} () const
+\begin{DoxyCompactList}\small\item\em That method returns model\textquotesingle{}s type. \end{DoxyCompactList}\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_c_model_a5183f5eddd756021c7de4000ea38648e}{get\+\_\+num}} () const
+\begin{DoxyCompactList}\small\item\em That method returns entry number ( only if model is an entrance ) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{class_c_model_ab09d7ba0900ae4b70db470d7f53485bb}{m\+\_\+\+Name}}
+\item 
+const string \mbox{\hyperlink{class_c_model_a791e5569b867f5edbee604d2668ecde0}{m\+\_\+\+Type}}
+\item 
+const char \mbox{\hyperlink{class_c_model_a292394e74912314d6f0d7aaa4387db55}{m\+\_\+\+Sign}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class that represents all models on the map. 
+
+It has\+: m\+\_\+\+Name -\/ name of model m\+\_\+\+Type -\/ type of model m\+\_\+\+Sign -\/ sign of model 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_model_ac7038923094553bd359adf3888207ef5}\label{class_c_model_ac7038923094553bd359adf3888207ef5}} 
+\index{CModel@{CModel}!CModel@{CModel}}
+\index{CModel@{CModel}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{CModel()}{CModel()}}
+{\footnotesize\ttfamily CModel\+::\+CModel (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{type,  }\item[{char}]{sign }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_model_a8a587bcc0f8b3b08079ab087da831e47}\label{class_c_model_a8a587bcc0f8b3b08079ab087da831e47}} 
+\index{CModel@{CModel}!````~CModel@{$\sim$CModel}}
+\index{````~CModel@{$\sim$CModel}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$CModel()}{~CModel()}}
+{\footnotesize\ttfamily virtual CModel\+::$\sim$\+CModel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_model_a3112a99092a0b109a7d42d741f4b5777}\label{class_c_model_a3112a99092a0b109a7d42d741f4b5777}} 
+\index{CModel@{CModel}!add\_location@{add\_location}}
+\index{add\_location@{add\_location}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{add\_location()}{add\_location()}}
+{\footnotesize\ttfamily virtual void CModel\+::add\+\_\+location (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_t_coordinates}{TCoordinates}} \&}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+That method implements adding location to model\textquotesingle{}s atributes. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em coordinates} & location coordinates \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_fixed___model_a8ae1f29666b8ccf0d99afaba081693e0}{CFixed\+\_\+\+Model}}, and \mbox{\hyperlink{class_c_non___fixed___model_a48c92a206c46f0d9cdad5689baee70c5}{CNon\+\_\+\+Fixed\+\_\+\+Model}}.
+
+\mbox{\Hypertarget{class_c_model_a96771c25866b5b4a09f0f568c20a70d5}\label{class_c_model_a96771c25866b5b4a09f0f568c20a70d5}} 
+\index{CModel@{CModel}!attack@{attack}}
+\index{attack@{attack}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily virtual bool CModel\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{CMap}} \&}]{mappy,  }\item[{const \mbox{\hyperlink{class_c_model}{CModel}} \&}]{victim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+That method implements attack. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mappy} & map on which model is located to find all his neighbours \\
+\hline
+\mbox{\texttt{ in}}  & {\em victim} & type of victim, that it attacks\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if model has more than 0 HP \\
+\hline
+{\em return} & FALSE if model has 0 HP \\
+\hline
+\end{DoxyRetVals}
+
+
+Implemented in \mbox{\hyperlink{class_c_burakov_a9ee6d91b89ffbb4682ffca2aa0664aa6}{CBurakov}}, \mbox{\hyperlink{class_c_fixed___model_a78f19de6b3d7dace4b1e7067f940b7c3}{CFixed\+\_\+\+Model}}, \mbox{\hyperlink{class_c_megadurum_ac7e8559eb941722145171d5289c7d369}{CMegadurum}}, \mbox{\hyperlink{class_c_non___fixed___model_a29c9f6fe13e340a2ac7aa98d34b38a9b}{CNon\+\_\+\+Fixed\+\_\+\+Model}}, and \mbox{\hyperlink{class_c_patriot_aec849e4d4fac2657d7f5cb7de0c9ca37}{CPatriot}}.
+
+\mbox{\Hypertarget{class_c_model_a51dadfa9bc1ffe5b628bbeb5309150f0}\label{class_c_model_a51dadfa9bc1ffe5b628bbeb5309150f0}} 
+\index{CModel@{CModel}!clone@{clone}}
+\index{clone@{clone}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_c_model}{CModel}} $\ast$ CModel\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+That method makes a copy of model. 
+
+\begin{DoxyReturn}{Returns}
+Pointer on class \mbox{\hyperlink{class_c_model}{CModel}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_c_alexandr_a2091a1626959bbabceea336d7f60f18b}{CAlexandr}}, \mbox{\hyperlink{class_c_burakov_abfb07f5cac25bdfb9767c69c0a926832}{CBurakov}}, \mbox{\hyperlink{class_c_entrance_a6b940af97a60cce6e6f692f1d93e8f2d}{CEntrance}}, \mbox{\hyperlink{class_c_exit_a369e205f6af1139469b467e299b6ec83}{CExit}}, \mbox{\hyperlink{class_c_freak_a7a52614f4681ed4ca7995db15fe4aada}{CFreak}}, \mbox{\hyperlink{class_c_free_a6707601bbbb6bc3576861840a6a4177a}{CFree}}, \mbox{\hyperlink{class_c_max_a773a44e6c860cbd707183fc3624e966d}{CMax}}, \mbox{\hyperlink{class_c_megadurum_a8c1bb9c92b1baee40160d100d2685713}{CMegadurum}}, \mbox{\hyperlink{class_c_nagibator_ae4cbbafff898718909fab47cd32d08a6}{CNagibator}}, \mbox{\hyperlink{class_c_neptune_af296767ce0d71612482acffc00eb7d1b}{CNeptune}}, \mbox{\hyperlink{class_c_patriot_ae287a036e27bdc69b83b911e5f52c86b}{CPatriot}}, \mbox{\hyperlink{class_c_viking_a6afcb84b30b9e8fcd41797a2355f94f1}{CViking}}, \mbox{\hyperlink{class_c_wall_ae05d3d4ab3f9e7fa5f5bca0ab7d92c23}{CWall}}, \mbox{\hyperlink{class_c_attacker_a00cc3eab5085f3cc6cacd851ebfb3fd8}{CAttacker}}, \mbox{\hyperlink{class_c_fixed___model_a09d3a8bddef12a123cd274889c3d4c08}{CFixed\+\_\+\+Model}}, \mbox{\hyperlink{class_c_non___fixed___model_ad2d274d6ca20e75f62f8fbec84d66995}{CNon\+\_\+\+Fixed\+\_\+\+Model}}, and \mbox{\hyperlink{class_c_tower_a1da1a904455d0ab4e2380ce951068ee7}{CTower}}.
+
+\mbox{\Hypertarget{class_c_model_a6451c81a3e011d24c999b307a0ea51e9}\label{class_c_model_a6451c81a3e011d24c999b307a0ea51e9}} 
+\index{CModel@{CModel}!decrease\_damage@{decrease\_damage}}
+\index{decrease\_damage@{decrease\_damage}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{decrease\_damage()}{decrease\_damage()}}
+{\footnotesize\ttfamily virtual void CModel\+::decrease\+\_\+damage (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{divider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+That method implements decreasing damage. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em divider} & how much to reduce damage \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_fixed___model_ab3200182173bf28405354214169bf55e}{CFixed\+\_\+\+Model}}, and \mbox{\hyperlink{class_c_non___fixed___model_a06ff1b91caeb6cf990d30f999ed40f0a}{CNon\+\_\+\+Fixed\+\_\+\+Model}}.
+
+\mbox{\Hypertarget{class_c_model_a26534753e68e505c722f8f3c3c54a126}\label{class_c_model_a26534753e68e505c722f8f3c3c54a126}} 
+\index{CModel@{CModel}!get\_hit@{get\_hit}}
+\index{get\_hit@{get\_hit}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{get\_hit()}{get\_hit()}}
+{\footnotesize\ttfamily virtual bool CModel\+::get\+\_\+hit (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+That method implements taking damage. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em damage} & The amount of damage the model receives\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if victim has more than 0 HP \\
+\hline
+{\em return} & FALSE if victim has 0 HP \\
+\hline
+\end{DoxyRetVals}
+
+
+Implemented in \mbox{\hyperlink{class_c_fixed___model_a5ca6cf46abb69d92d03718a74718e6e4}{CFixed\+\_\+\+Model}}, \mbox{\hyperlink{class_c_freak_acf5dd28db4f50a5c615b53bb69bff10c}{CFreak}}, \mbox{\hyperlink{class_c_nagibator_a98f96f57131cef8409bd05a1664c6c75}{CNagibator}}, and \mbox{\hyperlink{class_c_non___fixed___model_ad4e1a49e7f71877df3bc5bcaeaa5b739}{CNon\+\_\+\+Fixed\+\_\+\+Model}}.
+
+\mbox{\Hypertarget{class_c_model_a5183f5eddd756021c7de4000ea38648e}\label{class_c_model_a5183f5eddd756021c7de4000ea38648e}} 
+\index{CModel@{CModel}!get\_num@{get\_num}}
+\index{get\_num@{get\_num}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{get\_num()}{get\_num()}}
+{\footnotesize\ttfamily size\+\_\+t CModel\+::get\+\_\+num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+That method returns entry number ( only if model is an entrance ) 
+
+\begin{DoxyReturn}{Returns}
+The size\+\_\+t -\/ number of entrance 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_entrance_a37c6e40770431b508b9cf15a5515704c}{CEntrance}}.
+
+\mbox{\Hypertarget{class_c_model_a664cd2cd7217f8c7b15432498b2dfa77}\label{class_c_model_a664cd2cd7217f8c7b15432498b2dfa77}} 
+\index{CModel@{CModel}!is\_dead@{is\_dead}}
+\index{is\_dead@{is\_dead}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{is\_dead()}{is\_dead()}}
+{\footnotesize\ttfamily virtual bool CModel\+::is\+\_\+dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Method that finds out if attacker is dead ( tower is destroyed ) 
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & FALSE if model has more than 0 HP \\
+\hline
+{\em return} & TRUE if model has 0 HP \\
+\hline
+\end{DoxyRetVals}
+
+
+Implemented in \mbox{\hyperlink{class_c_fixed___model_aa433c86597b778f6ba82ef5cfe78e3fd}{CFixed\+\_\+\+Model}}, and \mbox{\hyperlink{class_c_non___fixed___model_a6edefb58ef4b07f5ce9b60163e3e850b}{CNon\+\_\+\+Fixed\+\_\+\+Model}}.
+
+\mbox{\Hypertarget{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}\label{class_c_model_abaf03da4865b093f6b223ca7ca31a0c7}} 
+\index{CModel@{CModel}!name@{name}}
+\index{name@{name}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily string CModel\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+That method returns model\textquotesingle{}s name. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & string -\/ model\textquotesingle{}s name \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_model_a3be9ff4a2a4f04ef09f84f9b35baefba}\label{class_c_model_a3be9ff4a2a4f04ef09f84f9b35baefba}} 
+\index{CModel@{CModel}!print@{print}}
+\index{print@{print}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void CModel\+::print (\begin{DoxyParamCaption}\item[{ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+That method prints model\textquotesingle{}s sign. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em os} & Stream, where will be sign printed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_entrance_a2ae0f37cd34eb65b680e404f4e63845e}{CEntrance}}.
+
+\mbox{\Hypertarget{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}\label{class_c_model_a95160be0fae2c72913c86a8ab145d8f6}} 
+\index{CModel@{CModel}!sign@{sign}}
+\index{sign@{sign}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily char CModel\+::sign (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+That method returns model\textquotesingle{}s sign. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & char -\/ model\textquotesingle{}s sign \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_c_model_a1385b01f10a0b3caf5e21c3a1af6769b}\label{class_c_model_a1385b01f10a0b3caf5e21c3a1af6769b}} 
+\index{CModel@{CModel}!type@{type}}
+\index{type@{type}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily string CModel\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+That method returns model\textquotesingle{}s type. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & string -\/ model\textquotesingle{}s type \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_model_ab09d7ba0900ae4b70db470d7f53485bb}\label{class_c_model_ab09d7ba0900ae4b70db470d7f53485bb}} 
+\index{CModel@{CModel}!m\_Name@{m\_Name}}
+\index{m\_Name@{m\_Name}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{m\_Name}{m\_Name}}
+{\footnotesize\ttfamily const string CModel\+::m\+\_\+\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_model_a292394e74912314d6f0d7aaa4387db55}\label{class_c_model_a292394e74912314d6f0d7aaa4387db55}} 
+\index{CModel@{CModel}!m\_Sign@{m\_Sign}}
+\index{m\_Sign@{m\_Sign}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{m\_Sign}{m\_Sign}}
+{\footnotesize\ttfamily const char CModel\+::m\+\_\+\+Sign\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_model_a791e5569b867f5edbee604d2668ecde0}\label{class_c_model_a791e5569b867f5edbee604d2668ecde0}} 
+\index{CModel@{CModel}!m\_Type@{m\_Type}}
+\index{m\_Type@{m\_Type}!CModel@{CModel}}
+\doxysubsubsection{\texorpdfstring{m\_Type}{m\_Type}}
+{\footnotesize\ttfamily const string CModel\+::m\+\_\+\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{models_8h}{models.\+h}}\item 
+\mbox{\hyperlink{models_8cpp}{models.\+cpp}}\end{DoxyCompactItemize}

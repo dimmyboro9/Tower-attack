@@ -1,0 +1,29 @@
+\hypertarget{max_8h_source}{}\doxysection{max.\+h}
+\mbox{\hyperlink{max_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MAX\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MAX\_HPP}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{attackers_8h}{attackers.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_max}{CMax}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_c_attacker}{CAttacker}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12     \textcolor{keyword}{public}:}
+\DoxyCodeLine{13                                 \mbox{\hyperlink{class_c_max_afa31b0e0930dc698b7691c82d10a43d4}{CMax}}            ( );}
+\DoxyCodeLine{19         \mbox{\hyperlink{class_c_model}{CModel}}*                 \mbox{\hyperlink{class_c_max_a773a44e6c860cbd707183fc3624e966d}{clone}}           ( ) \textcolor{keyword}{const override};}
+\DoxyCodeLine{20          }
+\DoxyCodeLine{33         \textcolor{keywordtype}{bool}                    \mbox{\hyperlink{class_c_max_a77f0f4cb4637db49a16f13393dbb2ec1}{make\_move}}       ( \mbox{\hyperlink{class_c_map}{CMap}}\& mappy ) \textcolor{keyword}{override};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{private}:}
+\DoxyCodeLine{36         \textcolor{keyword}{enum} Stats : \textcolor{keywordtype}{size\_t}}
+\DoxyCodeLine{37         \{}
+\DoxyCodeLine{38             MAX\_HP = 200,}
+\DoxyCodeLine{39             MAX\_DAM = 10,}
+\DoxyCodeLine{40             MAX\_SPD = 2,}
+\DoxyCodeLine{41             MAX\_RAN = 1,}
+\DoxyCodeLine{42             MAX\_PRC = 30}
+\DoxyCodeLine{43         \};}
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

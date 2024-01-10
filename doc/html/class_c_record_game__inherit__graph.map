@@ -1,0 +1,4 @@
+<map id="CRecordGame" name="CRecordGame">
+<area shape="rect" id="node1" title="Class that represents game records." alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node2" href="$class_c_game.html" title="Abstract class that represents all ways to provide the game ( real step game or record )" alt="" coords="27,5,98,32"/>
+</map>

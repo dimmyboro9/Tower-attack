@@ -1,0 +1,142 @@
+\hypertarget{class_c_start_game}{}\doxysection{CStart\+Game Class Reference}
+\label{class_c_start_game}\index{CStartGame@{CStartGame}}
+
+
+Class that represents real step game between player and computer.  
+
+
+
+
+{\ttfamily \#include $<$start\+\_\+game.\+h$>$}
+
+
+
+Inheritance diagram for CStart\+Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_c_start_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for CStart\+Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_c_start_game__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_start_game_af7e38abf79b585377c5f21f8a3f85858}{CStart\+Game}} ()=default
+\item 
+bool \mbox{\hyperlink{class_c_start_game_a23cdd11665ee8b7b3412bced1da03e77}{choose\+\_\+map}} () override
+\begin{DoxyCompactList}\small\item\em This method implements map choice. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_start_game_afbafe3b002908cb7ce5fa7293bac3022}{buy\+\_\+units}} () override
+\begin{DoxyCompactList}\small\item\em This method implements buying attackers. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_start_game_a6281d6a64df2c5640bc8a54677c685ea}{play}} () override
+\begin{DoxyCompactList}\small\item\em This method implements main engine of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents real step game between player and computer. 
+
+It has\+: m\+\_\+\+Option -\/ the last player\textquotesingle{}s choise 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_start_game_af7e38abf79b585377c5f21f8a3f85858}\label{class_c_start_game_af7e38abf79b585377c5f21f8a3f85858}} 
+\index{CStartGame@{CStartGame}!CStartGame@{CStartGame}}
+\index{CStartGame@{CStartGame}!CStartGame@{CStartGame}}
+\doxysubsubsection{\texorpdfstring{CStartGame()}{CStartGame()}}
+{\footnotesize\ttfamily CStart\+Game\+::\+CStart\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_start_game_afbafe3b002908cb7ce5fa7293bac3022}\label{class_c_start_game_afbafe3b002908cb7ce5fa7293bac3022}} 
+\index{CStartGame@{CStartGame}!buy\_units@{buy\_units}}
+\index{buy\_units@{buy\_units}!CStartGame@{CStartGame}}
+\doxysubsubsection{\texorpdfstring{buy\_units()}{buy\_units()}}
+{\footnotesize\ttfamily bool CStart\+Game\+::buy\+\_\+units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method implements buying attackers. 
+
+There are some private methods that help this method ( entry treatment, different switches ... )
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this method is fully complited \\
+\hline
+{\em return} & FALSE if player decide to exit the game \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_game_a502774dd7cd8d55afb347edfbbd79957}{CGame}}.
+
+\mbox{\Hypertarget{class_c_start_game_a23cdd11665ee8b7b3412bced1da03e77}\label{class_c_start_game_a23cdd11665ee8b7b3412bced1da03e77}} 
+\index{CStartGame@{CStartGame}!choose\_map@{choose\_map}}
+\index{choose\_map@{choose\_map}!CStartGame@{CStartGame}}
+\doxysubsubsection{\texorpdfstring{choose\_map()}{choose\_map()}}
+{\footnotesize\ttfamily bool CStart\+Game\+::choose\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method implements map choice. 
+
+There are some private methods that help this method ( entry treatment, different switches ... )
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this method is fully complited \\
+\hline
+{\em return} & FALSE if player decide to exit the game \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_game_a3df7dce120921d2864f30c3b5b5daacd}{CGame}}.
+
+\mbox{\Hypertarget{class_c_start_game_a6281d6a64df2c5640bc8a54677c685ea}\label{class_c_start_game_a6281d6a64df2c5640bc8a54677c685ea}} 
+\index{CStartGame@{CStartGame}!play@{play}}
+\index{play@{play}!CStartGame@{CStartGame}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily bool CStart\+Game\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This method implements main engine of the game. 
+
+It provides player moves, light AI, that puts towers, and simulation of the game process
+
+\begin{DoxyReturn}{Returns}
+The boolean value
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & TRUE if this method is fully complited \\
+\hline
+{\em return} & FALSE if player decide to exit the game \\
+\hline
+\end{DoxyRetVals}
+
+
+Implements \mbox{\hyperlink{class_c_game_a98999a3202f5b723746aacdb6985dbfe}{CGame}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{start__game_8h}{start\+\_\+game.\+h}}\item 
+\mbox{\hyperlink{start__game_8cpp}{start\+\_\+game.\+cpp}}\end{DoxyCompactItemize}
